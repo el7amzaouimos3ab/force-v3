@@ -30,7 +30,7 @@ useEffect(()=> {
     
 
 
-   const animation = gsap.to(".logo-logo", {
+   gsap.to(".logo-logo", {
       scrollTrigger: {
         trigger: ".logo-logo", // This triggers the effect when the logo enters the viewport
         start: "top top", // Trigger when top of the logo hits the bottom of the viewport
@@ -60,25 +60,6 @@ useEffect(()=> {
 
 }, []);
 
-const generateRows =() => {
-
-    const rows = [];
-    for ( let i = 1; i <= 2; i++){
-        rows.push(
-            <div className='row' key={i}>
-                <div className="card card-right">
-                    <img className='img' src={`/works/first/${2 * i - 1}.png`} alt="" />
-                </div>
-                <div className="card card-left">
-                    <img className='img' src={`/works/first/${2 * i}.png`} alt="" />
-                </div>
-            </div>
-        );
-    }
-
-    return rows;
-
-};
 
   return (
     <>

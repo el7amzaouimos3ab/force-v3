@@ -66,7 +66,7 @@ const SecondSection: React.FC = () => {
         <Image 
           src="/logos/logo.webp" // You can also use import to get a local image.
           alt="Logo" 
-          width={500} 
+          width={300} 
           height={300} 
            className="h-full"
         />

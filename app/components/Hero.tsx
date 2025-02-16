@@ -1,5 +1,7 @@
 // components/Hero.tsx
 'use client';
+
+import Image from "next/image";
 import React, { useEffect } from 'react';
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -46,7 +48,14 @@ const Hero: React.FC = () => {
 
       {/* Text Content */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-20">
-        <img src="/logos/01.gif" alt="" />
+          <Image 
+            src="/logos/01.gif" // You can also use import to get a local image.
+            alt="work 1" 
+            width={500} 
+            height={500}
+            unoptimized // Disable image optimization for GIFs
+ 
+          />
         <button className="bg-white px-6 py-2 text-black hover:bg-gray-400 transition-all duration-300" >
           اضغط وابدأ الرحلة   
         </button>
