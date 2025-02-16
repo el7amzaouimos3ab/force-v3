@@ -86,8 +86,13 @@ const generateRows =() => {
         <section className='section main'>
             <div className="main-content w-full-h-full">
                 <div className="logo w-full-h-full">
-                <img src="/logos/logoo.svg" alt="" className=' logo-logo '/>
-                
+                <Image 
+                            src="/logos/logoo.svg" // You can also use import to get a local image.
+                            alt="Image 1" 
+                            width={100} 
+                            height={100} 
+                            className="logo-logo"
+                          />
                 </div>
             </div>
 
