@@ -31,7 +31,7 @@ export default function ZoomingLogo() {
         
     
     
-       const animation = gsap.to(".logo-logo", {
+       gsap.to(".logo-logo", {
           scrollTrigger: {
             trigger: ".logo-logo", // This triggers the effect when the logo enters the viewport
             start: "top top", // Trigger when top of the logo hits the bottom of the viewport
