@@ -3,7 +3,6 @@ import Image from "next/image";
 
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import React, { useEffect } from 'react'
 
 
 
