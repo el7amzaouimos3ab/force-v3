@@ -38,82 +38,69 @@ const ContactSection = () => {
   };
 
   return (
-    <section>
-      <form onSubmit={handleSubmit} className="space-y-4 w-[50%] items-center justify-center">
+    <section className='flex w-full h-full items-center justify-center'>
+      <form onSubmit={handleSubmit} className="space-y-4 w-[50%] justify-center text-left ">
         {/* Name */}
         <div>
-          <label htmlFor="name" className="block">Name:</label>
           <input 
             type="text" 
             id="name" 
             name="name"
             value={formData.name}
             onChange={handleInputChange}
-            className="border p-2 w-full"
+            className="border bg-transparent border-white text-white p-2 w-full"
             required
-          />
-        </div>
-
-        {/* Full Name */}
-        <div>
-          <label htmlFor="fullName" className="block">Full Name:</label>
-          <input 
-            type="text" 
-            id="fullName" 
-            name="fullName"
-            value={formData.fullName}
-            onChange={handleInputChange}
-            className="border p-2 w-full"
-            required
+            placeholder='الاسم'
           />
         </div>
 
         {/* Email */}
         <div>
-          <label htmlFor="email" className="block">Email:</label>
           <input 
             type="email" 
             id="email" 
             name="email"
             value={formData.email}
             onChange={handleInputChange}
-            className="border p-2 w-full"
+            className="border bg-transparent border-white text-white p-2 w-full"
             required
+            placeholder='الايمايل'
           />
         </div>
 
+
         {/* Phone */}
         <div>
-          <label htmlFor="phone" className="block">Phone Number:</label>
           <input 
             type="tel" 
             id="phone" 
             name="phone"
             value={formData.phone}
             onChange={handleInputChange}
-            className="border p-2 w-full"
+            className="border bg-transparent border-white text-white p-2 w-full text-right"
             required
+            placeholder='رقم الجوال'
           />
         </div>
 
         {/* Message */}
         <div>
-          <label htmlFor="message" className="block">Message:</label>
           <textarea 
             id="message" 
             name="message"
             value={formData.message}
             onChange={handleInputChange}
-            className="border p-2 w-full"
+            className="border bg-transparent border-white text-white p-2 w-full"
             rows={4}
             required
+            placeholder='أخبرنا عن مشروعك'
           ></textarea>
         </div>
 
         {/* Submit Button */}
         <div>
-          <button type="submit" className="bg-blue-500 text-white p-2 rounded">
-            Submit
+          <button className="bg-white px-6 py-2 text-black hover:bg-gray-400 transition-all duration-300" >
+          اضغط وابدأ الرحلة   
           </button>
         </div>
       </form>
