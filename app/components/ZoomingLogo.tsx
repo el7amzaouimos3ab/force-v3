@@ -30,9 +30,9 @@ useEffect(()=> {
     
 
 
-   gsap.to(".logo-logo", {
+   gsap.to(".logo-logo1", {
       scrollTrigger: {
-        trigger: ".logo-logo", // This triggers the effect when the logo enters the viewport
+        trigger: ".logo-logo1", // This triggers the effect when the logo enters the viewport
         start: "top top", // Trigger when top of the logo hits the bottom of the viewport
         end: `+=${window.innerHeight }`, // End when top of the logo reaches top of the viewport
         scrub: true, // Makes the animation smooth with scrolling
@@ -65,14 +65,14 @@ useEffect(()=> {
     <>
         
         <section className='section main'>
-            <div className="main-content">
-                <div className="logo">
+            <div className="">
+                <div className="">
                     <Image 
                         src="/logos/logoo.svg" // You can also use import to get a local image.
                         alt="logo" 
                         width={180} 
                         height={180} 
-                        className='logo-logo'
+                        className='logo-logo1'
                     />
                 </div>
             </div>

@@ -37,7 +37,7 @@ const ImageSwiper: React.FC = () => {
       <SwiperSlide>
         <Image 
           src="/works/2.png" // You can also use import to get a local image.
-          alt="work 1" 
+          alt="work 2" 
           width={300} 
           height={300} 
         />
@@ -45,7 +45,7 @@ const ImageSwiper: React.FC = () => {
       <SwiperSlide>
         <Image 
           src="/works/3.jpeg" // You can also use import to get a local image.
-          alt="work 1" 
+          alt="work 3" 
           width={300} 
           height={300} 
         />
@@ -53,7 +53,7 @@ const ImageSwiper: React.FC = () => {
       <SwiperSlide>
         <Image 
           src="/works/4.jpeg" // You can also use import to get a local image.
-          alt="work 1" 
+          alt="work 4" 
           width={300} 
           height={300} 
         />
@@ -61,7 +61,7 @@ const ImageSwiper: React.FC = () => {
       <SwiperSlide>
         <Image 
           src="/works/5.jpeg" // You can also use import to get a local image.
-          alt="work 1" 
+          alt="work 5" 
           width={300} 
           height={300} 
         />
