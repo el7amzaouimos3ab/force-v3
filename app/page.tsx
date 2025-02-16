@@ -6,6 +6,8 @@ import ServicesSection from "./components/ServicesSection";
 import ImageSwiper from "./components/ImageSwiper";
 import NumbersSection from "./components/NumbersSection";
 import ZoomingLogo from "./components/ZoomingLogo";
+import ContactSection from "./components/ContactSection";
+
 
 export default function Home() {
   return (
@@ -18,7 +20,8 @@ export default function Home() {
         <ImageSwiper/>
         <NumbersSection />
         <ZoomingLogo />
-      </ReactLenis>
+        <ContactSection />
+      </ReactLenis> 
     </>
   );
 }
