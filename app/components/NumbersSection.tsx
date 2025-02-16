@@ -73,7 +73,7 @@ const NumbersSection = () => {
   return (
     <>
 
-    <section className="numbers-section w-full h-full bg-[#C13C27]">
+    <section className="numbers-section bg-[#C13C27]">
 
     <div className="grid grid-cols-1 md:grid-cols-3 h-1/2">
       {/* Grid Item 1 */}
