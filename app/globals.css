@@ -76,6 +76,13 @@ html, body {
     
 
 
+  .text-zoom {
+    opacity:0;
+    filter: blur(10px); /* Start with a blurry effect */
+    transition: opacity 1s ease, filter 1s ease; /* Smooth transition for appearance */
+  }
+
+
 
 /* Custom CSS for the gradient border effect */
 .numbers-section .border-item {

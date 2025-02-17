@@ -16,7 +16,7 @@ export default function ZoomingLogo() {
   useEffect(()=> {
 
     
-    const animation1 = ScrollTrigger.create({
+    ScrollTrigger.create({
 
         trigger: ".main",
         start:"top top",
@@ -26,7 +26,7 @@ export default function ZoomingLogo() {
 
     });
 
-    const animation2 = gsap.to(".logo ",{
+    gsap.to(".logo ",{
       
       scrollTrigger:{
         trigger:".logo",
@@ -38,7 +38,7 @@ export default function ZoomingLogo() {
     });
 
 
-    const animation3 = gsap.to(".text-zoom ",{
+    gsap.to(".text-zoom ",{
       
       scrollTrigger:{
         trigger:".text-zoom",
@@ -51,11 +51,6 @@ export default function ZoomingLogo() {
       duration: 0.5,
     });
     
-    return () => {
-      animation1.kill();  // Kill the ScrollTrigger when the component is unmounted
-      animation2.kill();  // Kill the ScrollTrigger when the component is unmounted
-      animation3.kill();  // Kill the ScrollTrigger when the component is unmounted
-    };
    
 }, []);
 

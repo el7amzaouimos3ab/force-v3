@@ -62,7 +62,7 @@ const SecondSection: React.FC = () => {
         </p>
       </div>
       {/* Left Div (Logo) */}
-      <div className="md:w-1/3 sm:h-[50%] flex justify-center overflow-hidden">
+      <div className="md:w-1/3 flex justify-center overflow-hidden">
         <Three />
       </div>
     </section>
