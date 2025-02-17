@@ -60,7 +60,7 @@ export default function ZoomingLogo() {
   return (
     <>
       <div className=" bg-black w-full h-[300vh]">
-        <section className="main relative flex items-center justify-center bg-slate-700 w-full h-[100vh] overflow-hidden">
+        <section className="main relative flex items-center justify-center w-full h-[100vh] overflow-hidden">
           <Image
             id="logo"
             src="/logos/logoo.svg" // You can also use import to get a local image.

@@ -2,9 +2,10 @@
 'use client';
 
 import Image from "next/image";
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import VideoModale from "./VideoModale";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -12,7 +13,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Hero: React.FC = () => {
 
+  const [isModalOpen, setModalOpen] = useState(false);
+  const triggerButtonRef = useRef<HTMLButtonElement>(null);
+
+
+    const openModal = () => setModalOpen(true);
+    const closeModal = () => setModalOpen(false);
+
   useEffect(() => {
+
     // ScrollTrigger to darken the section on scroll
     gsap.fromTo(
       '.hero-section', // Target the section with the class 'hero-section'
@@ -57,11 +66,15 @@ const Hero: React.FC = () => {
             className="w-[250px] md:w-full"
  
           />
-        <button className="bg-white px-6 py-2 mt-20 md:mt-1 text-black hover:bg-gray-400 transition-all duration-300" >
+        <button ref={triggerButtonRef} className="bg-white px-6 py-2 mt-20 md:mt-1 text-black hover:bg-gray-400 transition-all duration-300" onClick={openModal} >
           اضغط وابدأ الرحلة   
         </button>
-      </div>
 
+         
+        
+      </div>
+      {/* Modal Component */}
+      < VideoModale isOpen={isModalOpen} onClose={closeModal} triggerButtonRef={triggerButtonRef} />
 
     </section>
   );

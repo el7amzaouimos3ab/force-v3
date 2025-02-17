@@ -41,12 +41,12 @@ const PartnersSection: React.FC = () => {
         {images.map((image, index) => (
           <div key={index} className="relative overflow-hidden border border-black">
             <Image 
-                      src={image} // You can also use import to get a local image.
-                      alt={`Image ${index + 1}`}
-                      width={500} 
-                      height={300} 
-                      className="w-full h-full object-cover grayscale opacity-50 hover:grayscale-0 hover:opacity-100 hover:scale-110"
-                    />
+              src={image} // You can also use import to get a local image.
+              alt={`Image ${index + 1}`}
+              width={500} 
+              height={300} 
+              className="w-full h-full object-cover grayscale opacity-50 hover:grayscale-0 hover:opacity-100 hover:scale-110"
+            />
           </div>
         ))}
       </div>

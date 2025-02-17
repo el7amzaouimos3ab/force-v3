@@ -48,7 +48,7 @@ const SecondSection: React.FC = () => {
 
   return (
     <>
-    <section className="relative md:flex md:items-center md:justify-between  pt-16 md:h-full ">
+    <section id='about' className="relative md:flex md:items-center md:justify-between  pt-16 md:h-full ">
       
 
       {/* Right Div (Text) */}
