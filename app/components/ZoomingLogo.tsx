@@ -15,18 +15,40 @@ export default function ZoomingLogo() {
         start: "top top",
         end: () => `+=${window.innerHeight * 2}`,
         pin: true,
+        pinSpacing: true,
         scrub: 1, // Smooth scrolling effect
       });
 
-    
+      // ScrollTrigger for .logo
+      gsap.to("#logo", {
+        scrollTrigger: {
+          trigger: "#logo",
+          start: "top 50%", // Start when the top of .logo hits the top of the viewport
+          end: `+=${window.innerHeight}`, // End when the scroll position has moved by one viewport height
+          scrub: true, // Sync animation with scroll position
+        },
+        scale: 20, // Scale animation effect
+      });
 
+      // ScrollTrigger for .text-zoom
+      gsap.to(".text-zoom", {
+        scrollTrigger: {
+          trigger: ".text-zoom",
+          start: `+=${window.innerHeight}`, 
+          end: "top 90%", // End when the top of .text-zoom reaches 50% of the viewport height
+          scrub: true, // Sync animation with scroll position
+        },
+        opacity: 1, // Fade in effect
+        filter: "blur(0px)", // Remove blur
+        duration: 0.5, // Smooth transition
+      });
     
   }, []);
 
   return (
     <>
       <div className=" bg-black w-full h-[300vh]">
-        <section className="main flex items-center justify-center bg-slate-700 w-full h-[100vh] overflow-hidden">
+        <section className="main relative flex items-center justify-center bg-slate-700 w-full h-[100vh] overflow-hidden">
           <Image
             id="logo"
             src="/logos/logoo.svg" // You can also use import to get a local image.
