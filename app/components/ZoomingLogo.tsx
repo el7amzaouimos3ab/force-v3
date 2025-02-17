@@ -22,6 +22,8 @@ export default function ZoomingLogo() {
         start:"top top",
         end: ()=> `+=${window.innerHeight * 2}`,
         pin: true,
+        scrub: true, // Smoothes out the scroll behavior
+
 
     });
 
