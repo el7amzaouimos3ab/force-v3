@@ -11,7 +11,6 @@ import { useEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ZoomingLogo() {
-const height = window.innerHeight * 2;
 
   useEffect(()=> {
 
@@ -24,13 +23,13 @@ const height = window.innerHeight * 2;
 
         trigger: ".main",
         start:"top top",
-        end: ()=> `+=${height}`,
+        end: ()=> `+=${window.innerHeight * 2}`,
         pin: true,
         scrub: 1, // Smoothes out the scroll behavior
 
 
     });
-
+    
    
 }, []);
 
