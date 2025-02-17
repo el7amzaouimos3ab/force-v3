@@ -2,14 +2,18 @@
 import Image from "next/image";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ZoomingLogo() {
   useEffect(() => {
 
+    if (typeof window !== "undefined") {
+      // Refresh ScrollTrigger after content is loaded    
+
       // ScrollTrigger for .main
+      setTimeout(() => {
       ScrollTrigger.create({
         trigger: ".main",
         start: "top top",
@@ -17,13 +21,16 @@ export default function ZoomingLogo() {
         pin: true,
         pinSpacing: true,
         scrub: 1, // Smooth scrolling effect
-      });
+      }, );
+    }, 200); // Adjust timing if needed
 
+
+      
       // ScrollTrigger for .logo
       gsap.to("#logo", {
         scrollTrigger: {
           trigger: "#logo",
-          start: "top 50%", // Start when the top of .logo hits the top of the viewport
+          start: "top top", // Start when the top of .logo hits the top of the viewport
           end: `+=${window.innerHeight}`, // End when the scroll position has moved by one viewport height
           scrub: true, // Sync animation with scroll position
         },
@@ -42,6 +49,11 @@ export default function ZoomingLogo() {
         filter: "blur(0px)", // Remove blur
         duration: 0.5, // Smooth transition
       });
+
+
+      ScrollTrigger.refresh();
+
+    }
     
   }, []);
 
