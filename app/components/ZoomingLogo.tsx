@@ -11,6 +11,7 @@ import { useEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ZoomingLogo() {
+const height = window.innerHeight * 2;
 
   useEffect(()=> {
 
@@ -18,33 +19,18 @@ export default function ZoomingLogo() {
       window.scrollTo(0, 0); // Ensure that the page starts at the top after load
     }
 
-   
-
-    gsap.to(".logo ",{
-      
-      scrollTrigger:{
-        trigger:".logo",
-        start:"top top",
-        end: `+=${window.innerHeight }`,
-        scrub: true,
-      },
-      scale:20,
-    });
-
-
-    gsap.to(".text-zoom ",{
-      
-      scrollTrigger:{
-        trigger:".text-zoom",
-        start:`+=${window.innerHeight }`,
-        end: "top top",
-        scrub: true,
-      },
-      opacity : 1,
-      filter: "blur(0px)",
-      duration: 0.5,
-    });
     
+    ScrollTrigger.create({
+
+        trigger: ".main",
+        start:"top top",
+        end: ()=> `+=${height}`,
+        pin: true,
+        scrub: 1, // Smoothes out the scroll behavior
+
+
+    });
+
    
 }, []);
 
