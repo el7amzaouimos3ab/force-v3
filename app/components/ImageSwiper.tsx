@@ -18,7 +18,7 @@ const ImageSwiper: React.FC = () => {
     <>
     <section className='pb-10'>
     <div>
-        <h1 className='text-white text-4xl md:text-5xl font-medium py-10'>أعمالنا</h1>
+        <h1 id='#works' className='text-white text-4xl md:text-5xl font-medium py-10'>أعمالنا</h1>
       </div>
     <Swiper
       // install Swiper modules
@@ -49,6 +49,7 @@ const ImageSwiper: React.FC = () => {
           alt="work 1" 
           width={300} 
           height={300} 
+          className=' h-full'
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -57,6 +58,7 @@ const ImageSwiper: React.FC = () => {
           alt="work 2" 
           width={300} 
           height={300} 
+          className=' h-full'
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -65,6 +67,7 @@ const ImageSwiper: React.FC = () => {
           alt="work 3" 
           width={300} 
           height={300} 
+          className=' h-full'
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -73,6 +76,7 @@ const ImageSwiper: React.FC = () => {
           alt="work 4" 
           width={300} 
           height={300} 
+          className=' h-full'
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -81,6 +85,7 @@ const ImageSwiper: React.FC = () => {
           alt="work 5" 
           width={300} 
           height={300} 
+          className=' h-full'
         />
       </SwiperSlide>
 

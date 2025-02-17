@@ -76,7 +76,7 @@ const NumbersSection: React.FC = () => {
   return (
     <>
 
-    <section className="numbers-section bg-[#C13C27]">
+    <section id="#numbers" className="numbers-section bg-[#C13C27]">
 
     <div className="bottom-to-top">
         <h1 className='text-white text-4xl md:text-5xl font-medium py-10'>فورس بالأرقام</h1>

@@ -20,24 +20,6 @@ const Hero: React.FC = () => {
     const openModal = () => setModalOpen(true);
     const closeModal = () => setModalOpen(false);
 
-  useEffect(() => {
-
-    // ScrollTrigger to darken the section on scroll
-    gsap.fromTo(
-      '.hero-section', // Target the section with the class 'hero-section'
-      { opacity: 1 }, // Initial opacity (fully visible)
-      {
-        opacity: 0, // Final opacity (darken the section)
-        scrollTrigger: {
-          trigger: '.hero-section', // Trigger the effect when the section comes into view
-          start: 'top top', // Trigger when the top of the section hits the top of the viewport
-          end: 'bottom top', // End when the bottom of the section hits the top of the viewport
-          scrub: true, // Makes the animation tie to the scroll position
-          markers: false, // Set to true for debugging to see the start/end markers
-        },
-      }
-    );
-  }, []);
 
   return (
     <section className="hero-section relative w-full h-full">
@@ -69,9 +51,6 @@ const Hero: React.FC = () => {
         <button ref={triggerButtonRef} className="bg-white px-6 py-2 mt-20 md:mt-1 text-black hover:bg-gray-400 transition-all duration-300" onClick={openModal} >
           اضغط وابدأ الرحلة   
         </button>
-
-         
-        
       </div>
       {/* Modal Component */}
       < VideoModale isOpen={isModalOpen} onClose={closeModal} triggerButtonRef={triggerButtonRef} />
