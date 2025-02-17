@@ -8,8 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function ZoomingLogo() {
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.scrollTo(0, 0); // Ensure that the page starts at the top after load
 
       // ScrollTrigger for .main
       ScrollTrigger.create({
@@ -43,7 +41,7 @@ export default function ZoomingLogo() {
         filter: "blur(0px)", // Remove blur
         duration: 0.5, // Smooth transition
       });
-    }
+    
   }, []);
 
   return (
