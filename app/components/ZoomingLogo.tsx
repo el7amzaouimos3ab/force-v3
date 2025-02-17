@@ -19,16 +19,27 @@ export default function ZoomingLogo() {
     }
 
     
-    ScrollTrigger.create({
+   // ScrollTrigger for .main
+  ScrollTrigger.create({
+    trigger: ".main",
+    start: "top top",
+    end: () => `+=${window.innerHeight *2}`, 
+    pin: true,
+    scrub: 1, // Smooth scrolling effect
+  });
 
-        trigger: ".main",
-        start:"top top",
-        end: ()=> `+=${window.innerHeight * 2}`,
-        pin: true,
-        scrub: 1, // Smoothes out the scroll behavior
-
-
+    // ScrollTrigger for .logo
+    gsap.to(".logo", {
+      scrollTrigger: {
+          trigger: ".logo",
+          start: "top top", // Start when the top of .logo hits the top of the viewport
+          end: `+=${window.innerHeight}`, // End when the scroll position has moved by one viewport height
+          scrub: true, // Sync animation with scroll position
+      },
+      scale: 20, // Scale animation effect
     });
+
+
     
    
 }, []);
