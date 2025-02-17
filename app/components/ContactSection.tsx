@@ -38,8 +38,13 @@ const ContactSection = () => {
   };
 
   return (
-    <section className='flex w-full h-full items-center justify-center'>
-      <form onSubmit={handleSubmit} className="space-y-4 w-[50%] justify-center text-left ">
+    <>
+    <div>
+        <h1 className='text-white text-4xl md:text-5xl font-medium py-10'>تواصل معنا</h1>
+      </div>
+    <section className='flex items-center justify-center pb-10'>
+       
+      <form onSubmit={handleSubmit} className="space-y-4 w-[95%] md:w-[50%] justify-center text-left ">
         {/* Name */}
         <div>
           <input 
@@ -105,6 +110,7 @@ const ContactSection = () => {
         </div>
       </form>
     </section>
+    </>
   );
 };
 

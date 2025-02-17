@@ -4,7 +4,7 @@ import React from 'react';
 import { useEffect } from "react";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Image from "next/image";
+import Three from './Three';
 
 
 // Register the ScrollTrigger plugin
@@ -48,28 +48,22 @@ const SecondSection: React.FC = () => {
 
   return (
     <>
-    <section className="flex items-center justify-between px-8 py-16 h-full">
+    <section className="relative md:flex md:items-center md:justify-between  pt-16 md:h-full ">
       
 
       {/* Right Div (Text) */}
-      <div className="w-2/3 text-right">
-        <h2 className="bottom-to-top-text1 text-6xl/[1.2] font-semibold mb-4">تعزيز النجاح الرقمي
+      <div className="md:w-2/3 text-right">
+        <h2 className="bottom-to-top-text1 text-4xl/[1.2] md:text-6xl/[1.2] font-semibold mb-4">تعزيز النجاح الرقمي
           باستخدام <span className='text-blue-600'>حلول التسويق</span> المخصصة.</h2>
           
-        <p className="bottom-to-top-text1 text-xl/8">
-        نؤمن بأن كل مشروع ناجح وقوي في السوق وراءه جُنود مخفية مُتحزمة بـ الإبداع والاحترافية والتعاون والابتكار، وهذا سبب من أسباب اختيارنا  لاسم القوة الإبداعية لأننا نملك فريق متكامل، مؤهل، وذو خبرة عالية لديه شغف بأنه يوصل لأبعد نقطة بأفكارك  ويحولها إلى واقع ملموس بالحروف، الصوت، الصورة، والأرقام  .
+        <p className="bottom-to-top-text1 text-xl/8 ">
+        نؤمن بأن كل مشروع ناجح وقوي في السوق وراءه جُنود مخفية مُتحزمة بـالإبداع والاحترافية والتعاون والابتكار، وهذا سبب من أسباب اختيارنا  لاسم القوة الإبداعية لأننا نملك فريق متكامل، مؤهل، وذو خبرة عالية لديه شغف بأنه يوصل لأبعد نقطة بأفكارك  ويحولها إلى واقع ملموس بالحروف، الصوت، الصورة، والأرقام  .
 
         </p>
       </div>
       {/* Left Div (Logo) */}
-      <div className="w-1/3 flex justify-center">
-        <Image 
-          src="/logos/logo.webp" // You can also use import to get a local image.
-          alt="Logo" 
-          width={300} 
-          height={300} 
-           className="h-full"
-        />
+      <div className="md:w-1/3 sm:h-[50%] flex justify-center overflow-hidden">
+        <Three />
       </div>
     </section>
     </>

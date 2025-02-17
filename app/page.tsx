@@ -7,6 +7,8 @@ import ImageSwiper from "./components/ImageSwiper";
 import NumbersSection from "./components/NumbersSection";
 import ZoomingLogo from "./components/ZoomingLogo";
 import ContactSection from "./components/ContactSection";
+import { Footer } from "./components/Footer";
+
 
 
 export default function Home() {
@@ -21,6 +23,7 @@ export default function Home() {
         <NumbersSection />
         <ZoomingLogo />
         <ContactSection />
+        <Footer />
       </ReactLenis> 
     </>
   );

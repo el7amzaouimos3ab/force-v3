@@ -6,8 +6,37 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 // Register the ScrollTrigger plugin with GSAP
 gsap.registerPlugin(ScrollTrigger);
 
-const NumbersSection = () => {
+const NumbersSection: React.FC = () => {
   useEffect(() => {
+
+
+    const texts = gsap.utils.toArray('.bottom-to-top') as HTMLElement[];
+
+
+    // GSAP animation with ScrollTrigger
+    texts.forEach((texts) => {
+    
+    gsap.fromTo(
+      texts, // target class for the text
+      {
+        y: 35, // initial position (100px below its final position)
+        opacity: 0, // initial opacity (invisible)
+      },
+      {
+        y: 0, // final position (original position)
+        opacity: 1, // final opacity (fully visible)
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: texts,
+          start: 'top bottom', // animation starts when the top of the element is 80% from the top of the viewport
+          end: 'bottom bottom', // animation ends when the top of the element reaches 30% of the viewport
+          scrub: 1, // smooth scrubbing (animation tied to scroll position)
+        },
+      }
+    );
+  });
+
+    
 
     const numbers = document.querySelectorAll(".number");
 
@@ -15,13 +44,9 @@ const NumbersSection = () => {
       const targetValue = num.getAttribute("data-target");
 
       // Initialize GSAP animation for each number
-      gsap.fromTo(
+      gsap.to(
         num,
         {
-          opacity: 0.8,
-        },
-        {
-          opacity: 1,
           scrollTrigger: {
             trigger: num,
             start: "bottom 80%", // Start counting when the number is near 80% of the viewport height
@@ -45,110 +70,92 @@ const NumbersSection = () => {
     });
 
 
-    gsap.fromTo('.leter',{
-        opacity:0,
-    },{
-        opacity: 1,
-          scrollTrigger: {
-            trigger: ".leter",
-            start: "top 80%", // Start counting when the number is near 80% of the viewport height
-            end: "top 30%", // End when the top of the number reaches 30% of the viewport height
-            scrub: 1,}
-    });
-
-
-    gsap.fromTo('.leter2',{
-        opacity:0,
-    },{
-        opacity: 1,
-          scrollTrigger: {
-            trigger: ".leter2",
-            start: "top 80%", // Start counting when the number is near 80% of the viewport height
-            end: "top 30%", // End when the top of the number reaches 30% of the viewport height
-            scrub: 1,}
-    });
 
   }, []);
 
   return (
     <>
 
-    <section className="numbers-section h-[100%] bg-[#C13C27]">
+    <section className="numbers-section bg-[#C13C27]">
 
-    <div className="grid grid-cols-1 md:grid-cols-3 h-1/2">
+    <div className="bottom-to-top">
+        <h1 className='text-white text-4xl md:text-5xl font-medium py-10'>فورس بالأرقام</h1>
+      </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 ">
       {/* Grid Item 1 */}
-      <div className="relative flex flex-col items-center justify-center text-center p-10 border-item-1">
+      <div className=" relative flex flex-col items-center justify-center text-center py-20 border-item-1">
         
-        <div className="flex number-container text-center">
+        <div className="bottom-to-top flex number-container text-center">
             <h1 className="leter text-6xl text-white">M</h1>
             <div className="number text-6xl text-white" data-target="35">0</div>
             <h1 className="leter text-6xl text-white">,</h1>
             <div className="number text-6xl text-white" data-target="17">0</div>
         </div>
         
-      <h2 className="text-white "> اصنع تأثيرًا جريئًا </h2>
+      <h2 className="bottom-to-top text-white "> اصنع تأثيرًا جريئًا </h2>
         
       </div>
 
       {/* Grid Item 2 */}
-      <div className="relative flex flex-col items-center justify-center text-center p-10 border-item-1">
+      <div className="relative flex flex-col items-center justify-center text-center py-20  border-item-1">
         
-        <div className="flex number-container text-center">
+        <div className="bottom-to-top flex number-container text-center">
             <h1 className="leter text-6xl text-white">M</h1>
             <div className="number text-6xl text-white" data-target="100000">0</div>
         </div>
         
-      <h2 className="text-white "> اصنع تأثيرًا جريئًا </h2>
+      <h2 className="bottom-to-top text-white "> اصنع تأثيرًا جريئًا </h2>
         
       </div>
 
       {/* Grid Item 3 */}
-      <div className="relative flex flex-col items-center justify-center text-center p-10 border-item-1">
+      <div className="relative flex flex-col items-center justify-center text-center py-20  border-item-1">
         
-        <div className="flex number-container text-center">
+        <div className="bottom-to-top flex number-container text-center">
             <h1 className="leter text-6xl text-white">M</h1>
             <div className="number text-6xl text-white" data-target="100000">0</div>
         </div>
         
-      <h2 className="text-white "> اصنع تأثيرًا جريئًا </h2>
+      <h2 className="bottom-to-top text-white "> اصنع تأثيرًا جريئًا </h2>
         
       </div>
     </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-3 h-1/2">
+    <div className="grid grid-cols-1 md:grid-cols-3 ">
       {/* Grid Item 1 */}
-      <div className="relative flex flex-col items-center justify-center text-center p-10 border-item">
+      <div className="relative flex flex-col items-center justify-center text-center py-20  border-item">
         
-        <div className="flex number-container text-center">
+        <div className="bottom-to-top flex number-container text-center">
             <h1 className="leter2 text-6xl text-white">M</h1>
             <div className="number text-6xl text-white" data-target="100000">0</div>
         </div>
         
-      <h2 className="text-white "> اصنع تأثيرًا جريئًا </h2>
+      <h2 className="bottom-to-top text-white "> اصنع تأثيرًا جريئًا </h2>
         
       </div>
 
       {/* Grid Item 2 */}
-      <div className="relative flex flex-col items-center justify-center text-center p-10 border-item">
+      <div className="relative flex flex-col items-center justify-center text-center py-20  border-item">
         
-        <div className="flex number-container text-center">
+        <div className="bottom-to-top flex number-container text-center">
             <h1 className="leter2 text-6xl text-white">M</h1>
             <div className="number text-6xl text-white" data-target="300.000">0</div>
         </div>
         
-      <h2 className="text-white "> اصنع تأثيرًا جريئًا </h2>
+      <h2 className="bottom-to-top text-white "> اصنع تأثيرًا جريئًا </h2>
         
       </div>
 
       {/* Grid Item 3 */}
-      <div className="relative flex flex-col items-center justify-center text-center p-10 border-item">
+      <div className="relative flex flex-col items-center justify-center text-center py-20  border-item">
         
-        <div className="flex number-container text-center">
+        <div className="bottom-to-top flex number-container text-center">
             <h1 className="leter2 text-6xl text-white">M</h1>
             <div className="number text-6xl text-white" data-target="300">0</div>
         </div>
         
-      <h2 className="text-white "> اصنع تأثيرًا جريئًا </h2>
+      <h2 className="bottom-to-top text-white "> اصنع تأثيرًا جريئًا </h2>
         
       </div>
     </div>

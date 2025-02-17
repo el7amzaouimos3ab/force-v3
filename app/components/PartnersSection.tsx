@@ -32,8 +32,11 @@ const PartnersSection: React.FC = () => {
   const images = Array.from({ length: 21 }, (_, i) => `/images/${i + 1}.png`);
 
   return (
-    <section className="px-8 py-16 bg-gray-100">
-      <div className="fade-image grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 rtl">
+    <section className=" bg-gray-100 pb-10">
+      <div>
+        <h1 className='text-black text-4xl md:text-5xl font-medium py-10'>شركاؤنا</h1>
+      </div>
+      <div className="fade-image grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2 md:gap-4 rtl">
         {/* Loop over the images array and display each image */}
         {images.map((image, index) => (
           <div key={index} className="relative overflow-hidden border border-black">

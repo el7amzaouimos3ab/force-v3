@@ -15,16 +15,32 @@ import 'swiper/css/scrollbar';
 
 const ImageSwiper: React.FC = () => {
   return (
+    <>
+    <section className='pb-10'>
+    <div>
+        <h1 className='text-white text-4xl md:text-5xl font-medium py-10'>أعمالنا</h1>
+      </div>
     <Swiper
       // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={20}
-      slidesPerView={4}
+      spaceBetween={0}
+      slidesPerView={1}
+      breakpoints={{
+        // Customize breakpoints for different screen sizes
+        640: {
+          slidesPerView: 1,  // 1 slide on mobile (screen width <= 640px)
+        },
+        768: {
+          slidesPerView: 2,  // 2 slides on tablets (screen width <= 768px)
+        },
+        1024: {
+          slidesPerView: 4,  // 4 slides on desktop (screen width >= 1024px)
+        },
+      }}
+      loop={true}
       navigation
       pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
+      
     >
       <SwiperSlide>
         <Image 
@@ -68,6 +84,8 @@ const ImageSwiper: React.FC = () => {
       </SwiperSlide>
 
     </Swiper>
+    </section>
+    </>
   );
 };
 

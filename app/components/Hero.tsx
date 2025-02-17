@@ -54,9 +54,10 @@ const Hero: React.FC = () => {
             width={500} 
             height={500}
             unoptimized // Disable image optimization for GIFs
+            className="w-[250px] md:w-full"
  
           />
-        <button className="bg-white px-6 py-2 text-black hover:bg-gray-400 transition-all duration-300" >
+        <button className="bg-white px-6 py-2 mt-20 md:mt-1 text-black hover:bg-gray-400 transition-all duration-300" >
           اضغط وابدأ الرحلة   
         </button>
       </div>
