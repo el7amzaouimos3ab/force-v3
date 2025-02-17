@@ -28,18 +28,19 @@ export default function ZoomingLogo() {
     scrub: 1, // Smooth scrolling effect
   });
 
-    // ScrollTrigger for .logo
-    gsap.to(".logo", {
+
+    // ScrollTrigger for .text-zoom
+    gsap.to(".text-zoom", {
       scrollTrigger: {
-          trigger: ".logo",
-          start: "top top", // Start when the top of .logo hits the top of the viewport
-          end: `+=${window.innerHeight}`, // End when the scroll position has moved by one viewport height
+          trigger: ".text-zoom",
+          start: `+=${window.innerHeight}`, 
+          end: "top 90%", // End when the top of .text-zoom reaches 50% of the viewport height
           scrub: true, // Sync animation with scroll position
       },
-      scale: 20, // Scale animation effect
+      opacity: 1, // Fade in effect
+      filter: "blur(0px)", // Remove blur
+      duration: 0.5, // Smooth transition
     });
-
-
     
    
 }, []);
