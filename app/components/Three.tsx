@@ -110,7 +110,7 @@ const Three = () => {
           // Called while loading
           console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
         },
-        (error: Error) => {
+        (error:ErrorEvent) => {
           // Called if there's an error loading the model
           console.error("An error happened", error);
         }
