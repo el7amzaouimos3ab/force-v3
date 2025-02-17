@@ -28,6 +28,17 @@ export default function ZoomingLogo() {
     scrub: 1, // Smooth scrolling effect
   });
 
+    // ScrollTrigger for .logo
+    gsap.to(".logo", {
+      scrollTrigger: {
+          trigger: ".logo",
+          start: "top top", // Start when the top of .logo hits the top of the viewport
+          end: `+=${window.innerHeight}`, // End when the scroll position has moved by one viewport height
+          scrub: true, // Sync animation with scroll position
+      },
+      scale: 20, // Scale animation effect
+    });
+
 
     // ScrollTrigger for .text-zoom
     gsap.to(".text-zoom", {
@@ -51,6 +62,7 @@ export default function ZoomingLogo() {
     <>
         
         <section className='main bg-gray-800 flex items-center justify-center w-full h-full overflow-hidden'>
+            
 
             <Image 
               id="logo"
