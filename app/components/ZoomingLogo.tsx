@@ -12,20 +12,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function ZoomingLogo() {
 
-
   useEffect(()=> {
 
-    
-    ScrollTrigger.create({
+    if (typeof window !== "undefined") {
+      window.scrollTo(0, 0); // Ensure that the page starts at the top after load
+    }
 
-        trigger: ".main",
-        start:"top top",
-        end: ()=> `+=${window.innerHeight * 2}`,
-        pin: true,
-        scrub: true, // Smoothes out the scroll behavior
-
-
-    });
+   
 
     gsap.to(".logo ",{
       
