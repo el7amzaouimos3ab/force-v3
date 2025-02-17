@@ -22,7 +22,6 @@ export default function ZoomingLogo() {
         start:"top top",
         end: ()=> `+=${window.innerHeight * 2}`,
         pin: true,
-        pinSpacing: true,
 
     });
 
