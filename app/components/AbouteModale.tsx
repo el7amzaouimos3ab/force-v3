@@ -57,18 +57,7 @@ interface ModalProps {
           
             <div className="grid grid-cols-1 md:grid-cols-3 space-y-6 md:space-y-0">
                     {/* Grid Item 1 */}
-                    <div className="relative flex flex-col items-center text-center md:p-5 border-item ">
-                      
-                      <Image 
-                        src="/abouts/STRATEGY.gif" // You can also use import to get a local image.
-                        alt="Image 2" 
-                        width={100} 
-                        height={100} 
-                        className="bottom-to-top-text object-cover mb-4"
-                      />
-                      <p className="bottom-to-top-text text-white mb-4">المشهد الرقمي مزدحم. نحن نضمن أن علامتك التجارية لا تكتفي بالبقاء بل تزدهر. تألق مع التسويق الدقيق الذي يجعلك الخيار الأفضل.</p>
-                      
-                    </div>
+                    
             
                     {/* Grid Item 2 */}
                     <div className="relative flex flex-col items-center text-center md:p-5 border-item">
