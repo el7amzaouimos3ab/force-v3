@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 
 const Nav: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -25,7 +26,13 @@ const Nav: React.FC = () => {
         <div className="container flex flex-wrap items-center justify-between mx-auto text-white">
           
           <div className="flex items-center gap-x-2">
-            <img src="/logos/logo.webp" alt="logoNav" className="w-16 ml-5"/>
+            <Image 
+              src="/logos/logo.webp" // You can also use import to get a local image.
+              alt="logoNav"
+              width={500} 
+              height={300} 
+              className="w-16 ml-5"
+            />
             <div className="hidden lg:block">
               <ul className="flex flex-col text-sm gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-4 ">
               {navItems.map((item, index) => (
