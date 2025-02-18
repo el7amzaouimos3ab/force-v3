@@ -52,28 +52,7 @@ interface ModalProps {
         onClick={(e) => e.stopPropagation()} // Prevent closing modal when clicking inside
         style={{ direction: "ltr" }} // Force left-to-right layout to ensure scrollbar appears on the right
       >
-        {/* Scrollable content area */}
-        <div className="relative w-full h-full overflow-y-auto p-4 text-white">
-          <div className=" flex items-right justify-end border-item">
-                <Image 
-                  src="/logos/footer.webp" // You can also use import to get a local image.
-                    alt="Image 1" 
-                    width={400} 
-                    height={400} 
-                    className="img-top object-cover mb-4"
-                />
-              </div>
-              <p>
-                وُلدت "فورس" من شغف عميق بمساعدة الشركات على النجاح في عالم رقمي متسارع. عملنا مع علامات تجارية محلية ودولية، لكن تركيزنا ظل ثابتًا دائمًا - تحقيق نتائج حقيقية وقابلة للقياس. بصفتنا وكالة تسويق رقمي متكاملة الخدمات مقرها في المملكة العربية السعودية، نحن ندرك التحديات والفرص الفريدة الموجودة في هذا السوق.              
-              </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 space-y-6 md:space-y-0">
-                    
-                  </div>
-        </div>
-
-        {/* Close button positioned at the top-right corner */}
        
-        <button onClick={onClose} className="text-3xl text-white cursor-pointer absolute top-4 left-4 px-4 py-2"> X </button>
 
       </div>
     </div>
