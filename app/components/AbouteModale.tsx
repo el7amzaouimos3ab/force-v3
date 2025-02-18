@@ -54,7 +54,18 @@ interface ModalProps {
       >
         {/* Scrollable content area */}
         <div className="relative w-full h-full overflow-y-auto p-4 text-white">
-          
+          <div className=" flex items-right justify-end border-item">
+                <Image 
+                  src="/logos/footer.webp" // You can also use import to get a local image.
+                    alt="Image 1" 
+                    width={400} 
+                    height={400} 
+                    className="img-top object-cover mb-4"
+                />
+              </div>
+              <p>
+                وُلدت "فورس" من شغف عميق بمساعدة الشركات على النجاح في عالم رقمي متسارع. عملنا مع علامات تجارية محلية ودولية، لكن تركيزنا ظل ثابتًا دائمًا - تحقيق نتائج حقيقية وقابلة للقياس. بصفتنا وكالة تسويق رقمي متكاملة الخدمات مقرها في المملكة العربية السعودية، نحن ندرك التحديات والفرص الفريدة الموجودة في هذا السوق.              
+              </p>
             <div className="grid grid-cols-1 md:grid-cols-3 space-y-6 md:space-y-0">
                     {/* Grid Item 1 */}
                     <div className="relative flex flex-col items-center text-center md:p-5 border-item ">
@@ -69,7 +80,7 @@ interface ModalProps {
                       <p className="bottom-to-top-text text-white mb-4">المشهد الرقمي مزدحم. نحن نضمن أن علامتك التجارية لا تكتفي بالبقاء بل تزدهر. تألق مع التسويق الدقيق الذي يجعلك الخيار الأفضل.</p>
                       
                     </div>
-                    
+            
                     {/* Grid Item 2 */}
                     <div className="relative flex flex-col items-center text-center md:p-5 border-item">
                       <Image 
