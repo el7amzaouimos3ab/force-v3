@@ -32,7 +32,7 @@ const PartnersSection: React.FC = () => {
   const images = Array.from({ length: 21 }, (_, i) => `/images/${i + 1}.png`);
 
   return (
-    <section id='#partners' className=" bg-gray-100 pb-10">
+    <section id='partners' className=" bg-gray-100 pb-10">
       <div>
         <h1 className='text-black text-4xl md:text-5xl font-medium py-10'>شركاؤنا</h1>
       </div>

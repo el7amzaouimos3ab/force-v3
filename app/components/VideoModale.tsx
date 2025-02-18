@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faX } from "@fortawesome/free-solid-svg-icons";
 
 interface ModalProps {
   isOpen: boolean;
@@ -19,16 +21,21 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, triggerButtonRef }) => {
       gsap.set(modalRef.current, {
         x: buttonRect.left + buttonRect.width / 2 - modalRect.width / 2,
         y: buttonRect.top + buttonRect.height / 2 - modalRect.height / 2,
+        
         scale: 0,
       });
 
       // Animate the modal into its final position and scale
       gsap.to(modalRef.current, {
-        duration: 1,
+        duration: 0.9,
+        backgroundColor: "#000",
         x: 0, // Center horizontally
         y: 0, // Center vertically
         scale: 1,
-        ease: "power3.out", // Smooth animation easing
+        width: "auto", // Allow it to expand
+        height: "auto", // Allow it to expand
+        ease: "expo.in", // Smooth animation easing
+        
       });
     }
   }, [isOpen, triggerButtonRef]);
@@ -37,25 +44,29 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, triggerButtonRef }) => {
 
   return (
     <div
-      className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+      className="fixed inset-0 bg-gray-400 bg-opacity-90 flex justify-center items-center z-[999999]"
+      ref={modalRef}
       onClick={onClose} // Close modal on outside click
     >
       <div
-        className="bg-white p-8 rounded-lg shadow-lg h-full w-full"
-        ref={modalRef}
+        className="bg-black shadow-lg h-[90%] w-[80%] relative"
         onClick={(e) => e.stopPropagation()} // Prevent closing modal when clicking inside
       >
-        <h2 className="text-xl font-semibold mb-4">This is a Modal</h2>
-        <p className="text-sm mb-4">
-          Click outside the modal or the close button to close it.
-        </p>
-        <button
-          className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
-          onClick={onClose} // Close modal when clicked
-        >
-          Close
-        </button>
+        {/* Video player */}
+        <div className="relative w-full h-full border border-gray-700">
+          <iframe
+            src="/videos/Force3.mp4" // Replace with your video URL
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="absolute inset-0 w-full h-full"
+          ></iframe>
+        </div>
+
+        {/* Close button positioned at the top-right corner */}
+        
       </div>
+
+          <FontAwesomeIcon icon={ faX } className='fax cursor-pointer absolute top-4 right-4 px-4 py-2' color="white" onClick={onClose}  />
     </div>
   );
 };

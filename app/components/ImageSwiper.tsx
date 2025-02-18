@@ -18,12 +18,12 @@ const ImageSwiper: React.FC = () => {
     <>
     <section className='pb-10'>
     <div>
-        <h1 id='#works' className='text-white text-4xl md:text-5xl font-medium py-10'>أعمالنا</h1>
+        <h1 id='works' className='text-white text-4xl md:text-5xl font-medium py-10'>أعمالنا</h1>
       </div>
     <Swiper
       // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={0}
+      spaceBetween={10}
       slidesPerView={1}
       breakpoints={{
         // Customize breakpoints for different screen sizes
@@ -40,53 +40,66 @@ const ImageSwiper: React.FC = () => {
       loop={true}
       navigation
       pagination={{ clickable: true }}
-      className='w-full h-full'
+      className='w-full h-screen'
       
     >
       <SwiperSlide>
+        <div style={{ position: 'relative', width: '100%', height: '100%' }}>
         <Image 
           src="/works/1.PNG" // You can also use import to get a local image.
           alt="work 1" 
-          width={300} 
-          height={300} 
-          className=' h-full'
+          layout="fill" 
+          objectFit="cover" 
         />
+        </div>
       </SwiperSlide>
       <SwiperSlide>
+      <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+
         <Image 
           src="/works/2.PNG" // You can also use import to get a local image.
           alt="work 2" 
-          width={300} 
-          height={300} 
-          className=' h-full'
+          layout="fill" 
+          objectFit="cover" 
+          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" 
         />
+        </div>
       </SwiperSlide>
       <SwiperSlide>
+      <div className="relative w-full h-full">
+
         <Image 
           src="/works/3.JPEG" // You can also use import to get a local image.
           alt="work 3" 
-          width={300} 
-          height={300} 
-          className=' h-full'
+          layout="fill" 
+          objectFit="cover" 
+          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" 
         />
+        </div>
       </SwiperSlide>
       <SwiperSlide>
+      <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+
         <Image 
           src="/works/4.JPEG" // You can also use import to get a local image.
           alt="work 4" 
-          width={300} 
-          height={300} 
-          className=' h-full'
+          layout="fill" 
+          objectFit="cover" 
+          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" 
         />
+        </div>
       </SwiperSlide>
       <SwiperSlide>
+      <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+
         <Image 
           src="/works/5.jpeg" // You can also use import to get a local image.
           alt="work 5" 
-          width={300} 
-          height={300} 
-          className=' h-full'
+          layout="fill" 
+          objectFit="cover" 
+          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" 
         />
+        </div>
       </SwiperSlide>
 
     </Swiper>

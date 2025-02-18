@@ -59,7 +59,7 @@ export default function ZoomingLogo() {
 
   return (
     <>
-      <div id="#contact" className=" bg-black w-full h-[300vh]">
+      <div className=" bg-black w-full h-[300vh]">
         <section className="main relative flex items-center justify-center w-full h-[100vh] overflow-hidden">
           <Image
             id="logo"

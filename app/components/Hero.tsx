@@ -2,7 +2,7 @@
 'use client';
 
 import Image from "next/image";
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import VideoModale from "./VideoModale";
@@ -10,7 +10,7 @@ import VideoModale from "./VideoModale";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
+ 
 const Hero: React.FC = () => {
 
   const [isModalOpen, setModalOpen] = useState(false);
@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
 
 
   return (
-    <section className="hero-section relative w-full h-full">
+    <section id="hero" className="hero-section relative w-full h-full">
       {/* Video Background */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
@@ -48,9 +48,10 @@ const Hero: React.FC = () => {
             className="w-[250px] md:w-full"
  
           />
-        <button ref={triggerButtonRef} className="bg-white px-6 py-2 mt-20 md:mt-1 text-black hover:bg-gray-400 transition-all duration-300" onClick={openModal} >
+        <button ref={triggerButtonRef} className="bg-white  hover:bg-gray-400 px-6 py-2 text-black hover:bg-gray-400px-6 mt-20 md:mt-1 transition-all duration-300" onClick={openModal} >
           اضغط وابدأ الرحلة   
         </button>
+        
       </div>
       {/* Modal Component */}
       < VideoModale isOpen={isModalOpen} onClose={closeModal} triggerButtonRef={triggerButtonRef} />

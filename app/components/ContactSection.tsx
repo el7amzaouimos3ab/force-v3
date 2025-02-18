@@ -39,7 +39,7 @@ const ContactSection = () => {
 
   return (
     <>
-    <div>
+    <div id='contact'>
         <h1 className='text-white text-4xl md:text-5xl font-medium py-10'>تواصل معنا</h1>
       </div>
     <section className='flex items-center justify-center pb-10'>
