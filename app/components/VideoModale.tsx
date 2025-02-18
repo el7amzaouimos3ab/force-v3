@@ -66,8 +66,8 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, triggerButtonRef }) => {
         
       </div>
 
-          <FontAwesomeIcon icon={ faX } className='fax cursor-pointer absolute top-4 right-4 px-4 py-2' color="white" onClick={onClose}  />
-    </div>
+      <button onClick={onClose} className="text-3xl text-white cursor-pointer absolute top-4 left-4 px-4 py-2"> X </button>
+      </div>
   );
 };
 

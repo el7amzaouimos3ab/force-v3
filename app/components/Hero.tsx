@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
       </video>
 
       {/* Black Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-90 z-10"></div>
 
       {/* Text Content */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-20">
