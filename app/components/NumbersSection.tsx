@@ -86,14 +86,11 @@ const NumbersSection: React.FC = () => {
       {/* Grid Item 1 */}
       <div className=" relative flex flex-col items-center justify-center text-center py-20 border-item-1">
         
-        <div className="bottom-to-top flex number-container text-center">
-            <h1 className="leter text-6xl text-white">M</h1>
-            <div className="number text-6xl text-white" data-target="35">0</div>
-            <h1 className="leter text-6xl text-white">,</h1>
-            <div className="number text-6xl text-white" data-target="17">0</div>
+      <div className="bottom-to-top flex number-container text-center">
+            <div className="number text-6xl text-white" data-target="40">0</div>
         </div>
         
-      <h2 className="bottom-to-top text-white "> اصنع تأثيرًا جريئًا </h2>
+      <h2 className="bottom-to-top text-white ">عدد الموظفين</h2>
         
       </div>
 
@@ -101,23 +98,24 @@ const NumbersSection: React.FC = () => {
       <div className="relative flex flex-col items-center justify-center text-center py-20  border-item-1">
         
         <div className="bottom-to-top flex number-container text-center">
-            <h1 className="leter text-6xl text-white">M</h1>
-            <div className="number text-6xl text-white" data-target="100000">0</div>
+            <div className="number text-6xl text-white" data-target="15">0</div>
         </div>
         
-      <h2 className="bottom-to-top text-white "> اصنع تأثيرًا جريئًا </h2>
+      <h2 className="bottom-to-top text-white ">عدد العملاء </h2>
         
       </div>
 
       {/* Grid Item 3 */}
       <div className="relative flex flex-col items-center justify-center text-center py-20  border-item-1">
-        
+
         <div className="bottom-to-top flex number-container text-center">
             <h1 className="leter text-6xl text-white">M</h1>
-            <div className="number text-6xl text-white" data-target="100000">0</div>
+            <div className="number text-6xl text-white" data-target="2">0</div>
+            <h1 className="leter text-6xl text-white">,</h1>
+            <div className="number text-6xl text-white" data-target="1">0</div>
         </div>
         
-      <h2 className="bottom-to-top text-white "> اصنع تأثيرًا جريئًا </h2>
+      <h2 className="bottom-to-top text-white "> عميل محتمل </h2>
         
       </div>
     </div>
@@ -127,11 +125,13 @@ const NumbersSection: React.FC = () => {
       <div className="relative flex flex-col items-center justify-center text-center py-20  border-item">
         
         <div className="bottom-to-top flex number-container text-center">
-            <h1 className="leter2 text-6xl text-white">M</h1>
-            <div className="number text-6xl text-white" data-target="100000">0</div>
+            
+            <div className="number text-6xl text-white" data-target="500">0</div>
+            <h1 className="leter2 text-6xl text-white">+</h1>
+
         </div>
         
-      <h2 className="bottom-to-top text-white "> اصنع تأثيرًا جريئًا </h2>
+      <h2 className="bottom-to-top text-white ">المشاريع المنجزة</h2>
         
       </div>
 
@@ -139,11 +139,11 @@ const NumbersSection: React.FC = () => {
       <div className="relative flex flex-col items-center justify-center text-center py-20  border-item">
         
         <div className="bottom-to-top flex number-container text-center">
-            <h1 className="leter2 text-6xl text-white">M</h1>
-            <div className="number text-6xl text-white" data-target="300.000">0</div>
+            <h1 className="leter2 text-6xl text-white">K</h1>
+            <div className="number text-6xl text-white" data-target="300">0</div>
         </div>
         
-      <h2 className="bottom-to-top text-white "> اصنع تأثيرًا جريئًا </h2>
+      <h2 className="bottom-to-top text-white "> عملية تحويل ناجحة </h2>
         
       </div>
 
@@ -152,10 +152,10 @@ const NumbersSection: React.FC = () => {
         
         <div className="bottom-to-top flex number-container text-center">
             <h1 className="leter2 text-6xl text-white">M</h1>
-            <div className="number text-6xl text-white" data-target="300">0</div>
+            <div className="number text-6xl text-white" data-target="42">0</div>
         </div>
         
-      <h2 className="bottom-to-top text-white "> اصنع تأثيرًا جريئًا </h2>
+      <h2 className="bottom-to-top text-white ">الإنفاق الإعلاني</h2>
         
       </div>
     </div>

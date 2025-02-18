@@ -32,7 +32,7 @@ export const Footer = () => {
       <hr className="border-t-1 border-gray-700 " />
 
       <div className=" flex items-center justify-center border-item">
-          <h1 className='text-whit py-2'>© جميع الحقوق محفوظة</h1>
+          <h1 className='text-whit py-2'>شركة فورس © جميع الحقوق محفوظة</h1>
         </div>
 
     </footer>
