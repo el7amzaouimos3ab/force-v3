@@ -53,7 +53,10 @@ const Nav: React.FC = () => {
           <div className="flex items-center justify-center">
 
           <button className="relative  bg-white px-6 py-2 md:mt-1 text-black hover:bg-gray-400 text-center align-middle " >
-            اتصل بنا  
+            
+            <Link href="#contact" className="flex items-center">
+              اتصل بنا 
+            </Link>
           </button>
           
           <div className="lg:hidden">
