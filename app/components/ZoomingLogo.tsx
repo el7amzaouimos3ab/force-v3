@@ -29,7 +29,7 @@ export default function ZoomingLogo() {
         scrollTrigger: {
           trigger: ".text-zoom",
           start: `top center`, 
-          end: `+=10%`, // End when the top of .text-zoom reaches 50% of the viewport height
+          end: `50% 50%`, // End when the top of .text-zoom reaches 50% of the viewport height
           scrub: true, // Sync animation with scroll position
         },
         opacity: 1, // Fade in effect

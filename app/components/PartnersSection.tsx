@@ -36,15 +36,15 @@ const PartnersSection: React.FC = () => {
       <div>
         <h1 className='bottom-to-top-text1 text-black text-4xl md:text-5xl font-medium py-10'>شركاؤنا</h1>
       </div>
-      <div className="fade-image grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2 md:gap-4 rtl">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2 md:gap-4 rtl">
         {/* Loop over the images array and display each image */}
         {images.map((image, index) => (
           <div key={index} className="relative overflow-hidden border border-black">
             <Image 
               src={image} // You can also use import to get a local image.
               alt={`Image ${index + 1}`}
-              width={300} 
-              height={300} 
+              width={615} 
+              height={432} 
               className="w-full h-full object-cover grayscale opacity-50 hover:grayscale-0 hover:opacity-100 hover:scale-110"
             />
           </div>
