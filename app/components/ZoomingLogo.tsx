@@ -12,24 +12,13 @@ export default function ZoomingLogo() {
     if (typeof window !== "undefined") {
       // Refresh ScrollTrigger after content is loaded    
 
-      // ScrollTrigger for .main
-      ScrollTrigger.create({
-        trigger: ".main",
-        start: "top top",
-        end: () => `+=20%`,
-        pin: true,
-        pinSpacing: true,
-        scrub: 1, // Smooth scrolling effect
-      }, );
-
-
       
       // ScrollTrigger for .logo
       gsap.to("#logo", {
         scrollTrigger: {
           trigger: "#logo",
-          start: "top 70%", // Start when the top of .logo hits the top of the viewport
-          end: `+=20%`, // End when the scroll position has moved by one viewport height
+          start: "50% bottom", // Start when the top of .logo hits the top of the viewport
+          end: `center top`, // End when the scroll position has moved by one viewport height
           scrub: true, // Sync animation with scroll position
         },
         scale: 15, // Scale animation effect
@@ -57,14 +46,14 @@ export default function ZoomingLogo() {
 
   return (
     <>
-      <div className=" bg-black w-full h-[120vh]">
+      <div className=" bg-black w-full h-[100vh]">
         <section className="main relative flex items-center justify-center w-full h-[100vh] overflow-hidden">
           <Image
             id="logo"
             src="/logos/logoo.svg" // You can also use import to get a local image.
             alt="Image 1"
-            width={200}
-            height={200}
+            width={350}
+            height={350}
             className="logo origin-[50%_42%] relative"
           />
           <div className="absolute flex justify-center items-center text-center">

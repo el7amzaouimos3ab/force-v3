@@ -43,7 +43,7 @@ const PartnersSection: React.FC = () => {
             <Image 
               src={image} // You can also use import to get a local image.
               alt={`Image ${index + 1}`}
-              width={500} 
+              width={300} 
               height={300} 
               className="w-full h-full object-cover grayscale opacity-50 hover:grayscale-0 hover:opacity-100 hover:scale-110"
             />
