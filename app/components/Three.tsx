@@ -119,6 +119,7 @@ const Three = () => {
   }, []);
 
   return <canvas ref={canvasRef}></canvas>;
+  
 };
 
 export default Three;

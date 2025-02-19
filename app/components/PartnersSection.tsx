@@ -32,9 +32,9 @@ const PartnersSection: React.FC = () => {
   const images = Array.from({ length: 21 }, (_, i) => `/images/${i + 1}.png`);
 
   return (
-    <section id='partners' className=" bg-gray-100 pb-10">
+    <section id='partners' className="bg-gray-100 pb-10  px-4 lg:px-8">
       <div>
-        <h1 className='text-black text-4xl md:text-5xl font-medium py-10'>شركاؤنا</h1>
+        <h1 className='bottom-to-top-text1 text-black text-4xl md:text-5xl font-medium py-10'>شركاؤنا</h1>
       </div>
       <div className="fade-image grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2 md:gap-4 rtl">
         {/* Loop over the images array and display each image */}

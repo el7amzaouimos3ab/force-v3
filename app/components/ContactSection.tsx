@@ -39,10 +39,10 @@ const ContactSection = () => {
 
   return (
     <>
-    <div id='contact'>
+    <div id='contact' className='px-4 lg:px-8'>
         <h1 className='text-white text-4xl md:text-5xl font-medium py-10'>تواصل معنا</h1>
-      </div>
-    <section className='flex items-center justify-center pb-10'>
+    </div>
+    <section className='flex items-center justify-center pb-10 px-4 lg:px-8'>
        
       <form onSubmit={handleSubmit} className="space-y-4 w-[95%] md:w-[50%] justify-center text-left ">
         {/* Name */}

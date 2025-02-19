@@ -6,7 +6,7 @@ import { faSquareFacebook, faSquareInstagram, faSquareXTwitter, faLinkedin, faSq
 
 export const Footer = () => {
   return (
-    <footer>
+    <footer className='px-4 lg:px-8'>
 
       <div className="grid grid-cols-1 md:grid-cols-2 py-14">
 
@@ -24,7 +24,7 @@ export const Footer = () => {
             alt="Image 1" 
             width={400} 
             height={400} 
-            className="img-top object-cover mb-4"
+            className="object-cover mb-4"
           />
         </div>
       </div>

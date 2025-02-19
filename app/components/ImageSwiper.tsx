@@ -18,7 +18,7 @@ const ImageSwiper: React.FC = () => {
     <>
     <section className='pb-10'>
     <div>
-        <h1 id='works' className='text-white text-4xl md:text-5xl font-medium py-10'>أعمالنا</h1>
+        <h1 id='works' className='text-white text-4xl md:text-5xl font-medium py-10  px-4 lg:px-8'>أعمالنا</h1>
       </div>
     <Swiper
       // install Swiper modules
