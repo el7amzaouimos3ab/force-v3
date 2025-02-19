@@ -17,7 +17,7 @@ export default function ZoomingLogo() {
       gsap.to("#logo", {
         scrollTrigger: {
           trigger: "#logo",
-          start: "50% bottom", // Start when the top of .logo hits the top of the viewport
+          start: "bottom bottom", // Start when the top of .logo hits the top of the viewport
           end: `center top`, // End when the scroll position has moved by one viewport height
           scrub: true, // Sync animation with scroll position
         },
