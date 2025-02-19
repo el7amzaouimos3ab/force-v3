@@ -44,7 +44,7 @@ const SecondSection: React.FC = () => {
   return (
     <section id='about' className="relative md:flex md:items-center md:justify-between md:h-full px-4 lg:px-8">
       {/* Right Div (Text) */}
-      <div className="md:w-2/3 text-right">
+      <div className="md:w-[60%] text-right">
         <h2 className="bottom-to-top-text1 text-4xl/[1.2] md:text-6xl/[1.2] font-semibold mb-4">
           تعزيز النجاح الرقمي <br />
           باستخدام حلول التسويق <br />
@@ -67,7 +67,7 @@ const SecondSection: React.FC = () => {
       </div>
 
       {/* Left Div (Logo) */}
-      <div className="md:w-1/3 flex justify-center overflow-hidden">
+      <div className="md:w-[40%] flex justify-center overflow-hidden">
         <Three />
       </div>
     </section>
