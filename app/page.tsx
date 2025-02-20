@@ -13,6 +13,7 @@ import NumbersSection from "./components/NumbersSection";
 import ZoomingLogo from "./components/ZoomingLogo";
 import ContactSection from "./components/ContactSection";
 import { Footer } from "./components/Footer";
+import ScrollingText from "./components/ScrollingText";
 
 
 
@@ -36,6 +37,8 @@ export default function Home() {
         
         {/* Services Section (Overview of the services you offer) */}
         <ServicesSection />
+
+        <ScrollingText />
         
         {/* Image Swiper (Showcase images with a swiper or carousel) */}
         <ImageSwiper/>

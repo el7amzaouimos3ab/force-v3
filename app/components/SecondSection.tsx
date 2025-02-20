@@ -45,7 +45,7 @@ const SecondSection: React.FC = () => {
     <section id='about' className="relative md:flex md:items-center md:justify-between md:h-full px-4 lg:px-8">
       {/* Right Div (Text) */}
       <div className="md:w-[60%] text-right">
-        <h2 className="bottom-to-top-text1 text-4xl/[1.2] md:text-6xl/[1.2] font-semibold mb-4">
+        <h2 className="bottom-to-top-text1 text-[#564897] text-4xl/[1.2] md:text-6xl/[1.2] font-semibold mb-4">
           تعزيز النجاح الرقمي <br />
           باستخدام حلول التسويق <br />
           المخصصة.
@@ -56,10 +56,10 @@ const SecondSection: React.FC = () => {
         </p>
         <button
           ref={triggerButtonRef}  // Assign ref to the button so we can get its position
-          className="bottom-to-top-text1 bg-white hover:bg-purple-600 px-6 py-2 text-black mt-20 md:mt-1 transition-all duration-300"
+          className="bottom-to-top-text1 bg-white hover:bg-[#564897] hover:text-white px-6 py-2 text-black  transition-all duration-300 mt-4"
           onClick={openModal}
         >
-          اضغط وابدأ الرحلة
+          اعرف المزيد
         </button>
 
         {/* Modal Component */}
@@ -67,7 +67,7 @@ const SecondSection: React.FC = () => {
       </div>
 
       {/* Left Div (Logo) */}
-      <div className="md:w-[40%] flex justify-center overflow-hidden">
+      <div className="bottom-to-top-text1 md:w-[40%] flex justify-center overflow-hidden">
         <Three />
       </div>
     </section>

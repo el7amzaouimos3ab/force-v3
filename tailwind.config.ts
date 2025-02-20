@@ -12,6 +12,19 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+
+
+      keyframes: {
+        'scroll-left-to-right': {
+          from: { transform: 'translateX(0)' }, // Start the text off-screen to the right
+          to: { transform: 'translateX(calc(-100% - 160px))' }, // End the text off-screen to the left
+        },
+      },
+      animation: {
+        'scroll-left-to-right': 'scroll-left-to-right 8s linear infinite',// Apply the scrolling animation
+      },
+
+
     },
   },
   plugins: [],

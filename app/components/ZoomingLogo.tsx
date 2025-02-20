@@ -21,7 +21,10 @@ export default function ZoomingLogo() {
           end: `center top`, // End when the scroll position has moved by one viewport height
           scrub: true, // Sync animation with scroll position
         },
-        scale: 15, // Scale animation effect
+        scale: 20, // Scale animation effect
+        x: "0%", 
+        y: "0%",
+        transformOrigin: "50% 45%"
       });
 
       // ScrollTrigger for .text-zoom
@@ -46,8 +49,9 @@ export default function ZoomingLogo() {
 
   return (
     <>
-      <div className=" bg-black w-full h-[100vh]">
+      <div className="w-full h-[100vh]">
         <section className="main relative flex items-center justify-center w-full h-[100vh] overflow-hidden">
+          
           <Image
             id="logo"
             src="/logos/logoo.svg" // You can also use import to get a local image.
@@ -56,6 +60,7 @@ export default function ZoomingLogo() {
             height={350}
             className="logo origin-[50%_42%] relative"
           />
+
           <div className="absolute flex justify-center items-center text-center">
             <h1 className="text-zoom text-3xl md:text-4xl w-[95%] md:w-[70%]">
               نحن شغوفون بالابتكار والأفكار الرائعة والتنفيذ الذي يجمع كل ذلك في تجربة واحدة جميلة. إذا كنت كذلك، فاتصل بنا أو أرسل لنا بريدًا إلكترونيًا للبدء.

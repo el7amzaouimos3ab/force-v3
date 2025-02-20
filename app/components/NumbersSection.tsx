@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 // Register the ScrollTrigger plugin with GSAP
 gsap.registerPlugin(ScrollTrigger);
@@ -34,6 +35,19 @@ const NumbersSection: React.FC = () => {
         },
       }
     );
+  });
+
+  gsap.to("#logo2", {
+    scrollTrigger: {
+      trigger: "#logo2",
+      start: "bottom bottom", // Start when the top of .logo hits the top of the viewport
+      end: `center top`, // End when the scroll position has moved by one viewport height
+      scrub: true, // Sync animation with scroll position
+    },
+    scale: 20, // Scale animation effect
+    x: "0%", 
+    y: "0%",
+    transformOrigin: "50% 45%"
   });
 
     
@@ -90,7 +104,7 @@ const NumbersSection: React.FC = () => {
             <div className="number text-6xl text-white" data-target="40">0</div>
         </div>
         
-      <h2 className="bottom-to-top text-white ">عدد الموظفين</h2>
+      <h2 className="bottom-to-top text-xl text-white ">عدد الموظفين</h2>
         
       </div>
 
@@ -101,7 +115,7 @@ const NumbersSection: React.FC = () => {
             <div className="number text-6xl text-white" data-target="15">0</div>
         </div>
         
-      <h2 className="bottom-to-top text-white ">عدد العملاء </h2>
+      <h2 className="bottom-to-top text-xl text-white ">عدد العملاء </h2>
         
       </div>
 
@@ -115,7 +129,7 @@ const NumbersSection: React.FC = () => {
             <div className="number text-6xl text-white" data-target="1">0</div>
         </div>
         
-      <h2 className="bottom-to-top text-white "> عميل محتمل </h2>
+      <h2 className="bottom-to-top text-xl text-white "> عميل محتمل </h2>
         
       </div>
     </div>
@@ -131,7 +145,7 @@ const NumbersSection: React.FC = () => {
 
         </div>
         
-      <h2 className="bottom-to-top text-white ">المشاريع المنجزة</h2>
+      <h2 className="bottom-to-top text-xl text-white ">المشاريع المنجزة</h2>
         
       </div>
 
@@ -143,7 +157,7 @@ const NumbersSection: React.FC = () => {
             <div className="number text-6xl text-white" data-target="300">0</div>
         </div>
         
-      <h2 className="bottom-to-top text-white "> عملية تحويل ناجحة </h2>
+      <h2 className="bottom-to-top text-xl text-white "> عملية تحويل ناجحة </h2>
         
       </div>
 
@@ -155,11 +169,41 @@ const NumbersSection: React.FC = () => {
             <div className="number text-6xl text-white" data-target="42">0</div>
         </div>
         
-      <h2 className="bottom-to-top text-white ">الإنفاق الإعلاني</h2>
+      <h2 className="bottom-to-top text-xl text-white ">الإنفاق الإعلاني</h2>
         
       </div>
     </div>
 
+  </section>
+
+
+  <section className="w-full h-full ">
+  <svg
+      width="100%"  // Ensures it takes full width of the container
+      height="100%" // Ensures it takes full height of the container
+      xmlns="http://www.w3.org/2000/svg"
+      
+      preserveAspectRatio="xMidYMid meet"  // Ensures the content is centered
+    >
+      {/* Full background color */}
+      <rect x="0" y="0" width="100%" height="100%" fill="gray" />
+
+      {/* Define the mask */}
+      <mask id="imageMask" x="0" y="0" width="100%" height="100%">
+        {/* You can use an SVG image or simple shape for the mask */}
+        <image id="logo2"  href="/logos/logoo.svg" width="50%" height="50%" x="25%" y="25%" />
+      </mask>
+
+      
+
+      {/* Apply the mask to the PNG image */}
+      <image
+        href="/banner.png"  // The PNG image you want to mask
+        width="100%"  // Full width of the container
+        height="100%"  // Full height of the container
+        mask="url(#imageMask)"  // Apply the mask here
+      />
+    </svg>
 
   </section>
   </>

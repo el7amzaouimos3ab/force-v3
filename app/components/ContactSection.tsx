@@ -40,7 +40,7 @@ const ContactSection = () => {
   return (
     <>
     <div id='contact' className='px-4 lg:px-8'>
-        <h1 className='text-white text-4xl md:text-5xl font-medium py-10'>تواصل معنا</h1>
+        <h1 className='bottom-to-top-text1 text-white text-4xl md:text-5xl font-medium py-10'>تواصل معنا</h1>
     </div>
     <section className='flex items-center justify-center pb-10 px-4 lg:px-8'>
        
@@ -53,7 +53,7 @@ const ContactSection = () => {
             name="name"
             value={formData.name}
             onChange={handleInputChange}
-            className="border bg-transparent border-white text-white p-2 w-full"
+            className="bottom-to-top-text1 border bg-transparent border-white text-white p-2 w-full"
             required
             placeholder='الاسم'
           />
@@ -67,7 +67,7 @@ const ContactSection = () => {
             name="email"
             value={formData.email}
             onChange={handleInputChange}
-            className="border bg-transparent border-white text-white p-2 w-full"
+            className="bottom-to-top-text1 border bg-transparent border-white text-white p-2 w-full"
             required
             placeholder='الايمايل'
           />
@@ -82,7 +82,7 @@ const ContactSection = () => {
             name="phone"
             value={formData.phone}
             onChange={handleInputChange}
-            className="border bg-transparent border-white text-white p-2 w-full text-right"
+            className="bottom-to-top-text1 border bg-transparent border-white text-white p-2 w-full text-right"
             required
             placeholder='رقم الجوال'
           />

@@ -29,7 +29,7 @@ const PartnersSection: React.FC = () => {
 
 
   // Array to generate image paths
-  const images = Array.from({ length: 21 }, (_, i) => `/images/${i + 1}.png`);
+  const images = Array.from({ length: 18 }, (_, i) => `/images/${i + 1}.png`);
 
   return (
     <section id='partners' className="bg-gray-100 pb-10  px-4 lg:px-8">
@@ -39,7 +39,7 @@ const PartnersSection: React.FC = () => {
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2 md:gap-4 rtl">
         {/* Loop over the images array and display each image */}
         {images.map((image, index) => (
-          <div key={index} className="relative overflow-hidden border border-black">
+          <div key={index} className="bottom-to-top-text1 relative overflow-hidden border border-black">
             <Image 
               src={image} // You can also use import to get a local image.
               alt={`Image ${index + 1}`}

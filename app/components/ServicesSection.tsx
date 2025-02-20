@@ -67,9 +67,9 @@ const texts = gsap.utils.toArray('.bottom-to-top-text') as HTMLElement[];
             alt="Image 2" 
             width={100} 
             height={100} 
-            className="bottom-to-top-text object-cover mb-4"
+            className="bottom-to-top-text object-cover my-4"
           />
-          <h2 className="bottom-to-top-text text-blue-500 text-3xl font-semibold my-6"> تسريع النمو </h2>
+          <h2 className="bottom-to-top-text text-[#3DC1F0] text-3xl font-semibold my-6"> تسريع النمو </h2>
           <p className="bottom-to-top-text text-white mb-4">المشهد الرقمي مزدحم. نحن نضمن أن علامتك التجارية لا تكتفي بالبقاء بل تزدهر. تألق مع التسويق الدقيق الذي يجعلك الخيار الأفضل.</p>
           <div className='space-y-2'>
             <p className='bottom-to-top-text text-white'>تطوير الهوية البصرية والعلامة التجارية </p>
@@ -86,9 +86,9 @@ const texts = gsap.utils.toArray('.bottom-to-top-text') as HTMLElement[];
             alt="Image 1" 
             width={100} 
             height={100} 
-            className="bottom-to-top-text object-cover mb-4"
+            className="bottom-to-top-text object-cover my-4"
           />
-          <h2 className="bottom-to-top-text text-red-500 text-3xl font-semibold my-6"> اصنع تأثيرًا جريئًا </h2>
+          <h2 className="bottom-to-top-text text-[#CC4539] text-3xl font-semibold my-6"> اصنع تأثيرًا جريئًا </h2>
           <p className="bottom-to-top-text text-white mb-4">نساعدك على رسم هوية مميزة في سوقك. حلول جريئة وإبداعية تضمن أن علامتك التجارية تترك انطباعًا لا يُنسى.</p>
           <div className='space-y-2'>
             <p className='bottom-to-top-text text-white'>تطوير الهوية البصرية والعلامة التجارية </p>
@@ -105,9 +105,9 @@ const texts = gsap.utils.toArray('.bottom-to-top-text') as HTMLElement[];
             alt="Image 1" 
             width={100} 
             height={100} 
-            className="bottom-to-top-text object-cover mb-4"
+            className="bottom-to-top-text object-cover my-4"
           />
-          <h2 className="bottom-to-top-text text-purple-500 text-3xl font-semibold my-6">تعزيز التقدم </h2>
+          <h2 className="bottom-to-top-text text-[#564897] text-3xl font-semibold my-6">تعزيز التقدم </h2>
           <p className="bottom-to-top-text text-white mb-4">تعاون معنا لاكتشاف التكتيكات والأدوات والمنصات المناسبة التي تدفع عملك إلى الأمام وتضعك على مسار النجاح المستدام.</p>
           <div className='space-y-2'>
             <p className='bottom-to-top-text text-white '>تطوير الهوية البصرية والعلامة التجارية </p>
