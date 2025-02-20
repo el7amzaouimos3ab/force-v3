@@ -7,8 +7,6 @@ import ReactLenis from "lenis/react";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import SecondSection from "./components/SecondSection";
-import PartnersSection from "./components/PartnersSection";
-import ServicesSection from "./components/ServicesSection";
 import ImageSwiper from "./components/ImageSwiper";
 import NumbersSection from "./components/NumbersSection";
 import ZoomingLogo from "./components/ZoomingLogo";
