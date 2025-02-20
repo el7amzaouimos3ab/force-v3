@@ -97,7 +97,6 @@ html, body {
     right: 0;
     height: 1px; /* Height of the top border */
     background: linear-gradient(to right, #fff, #000); /* Gradient for first item */
-    z-index: -1;
   }
   
   /* Different gradient for the second grid item */
@@ -109,7 +108,6 @@ html, body {
     right: 0;
     height: 1px;
     background: linear-gradient(to right, #fff, #fff); /* Gradient for second item */
-    z-index: -1;
   }
   
   /* Different gradient for the third grid item */
@@ -121,7 +119,6 @@ html, body {
     right: 0;
     height: 1px;
     background: linear-gradient(to left, #fff, #000); /* Gradient for third item */
-    z-index: -1;
   }
   
   /* Vertical gradient borders between items */
@@ -133,7 +130,6 @@ html, body {
     left: 0;
     width: 1px; /* Width of the vertical border */
     background: linear-gradient(to bottom, #fff, #000); /* Another gradient for the border */
-    z-index: -1;
   }
   
   /* Optional: Add bottom border for the last item */

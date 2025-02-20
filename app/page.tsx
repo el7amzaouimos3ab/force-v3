@@ -1,3 +1,4 @@
+
 // Importing React and Next.js related modules
 import React from "react";
 import ReactLenis from "lenis/react";
@@ -14,11 +15,17 @@ import ZoomingLogo from "./components/ZoomingLogo";
 import ContactSection from "./components/ContactSection";
 import { Footer } from "./components/Footer";
 import ScrollingText from "./components/ScrollingText";
+import Test from "./components/Test";
+
+
 
 
 
 
 export default function Home() {
+
+
+
   return (
     <>
 
@@ -28,15 +35,17 @@ export default function Home() {
         
         {/* Hero Section (First section on the page) */}
         <Hero />
+
         
         {/* Second Section (Can be a showcase or any other content) */}
         <SecondSection />
         
         {/* Partners Section (Showcase of partners or collaborators) */}
-        <PartnersSection />
+
+
+        <Test />
         
         {/* Services Section (Overview of the services you offer) */}
-        <ServicesSection />
 
         <ScrollingText />
         

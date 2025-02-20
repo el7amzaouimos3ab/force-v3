@@ -6,9 +6,9 @@ const ScrollingText: React.FC = () => {
     <section className='relative'  dir='ltr'> 
 
 
-        <div className="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-l from-black via-transparent to-transparent z-10" ></div>
-      <div className="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-black via-transparent to-transparent z-10"></div>
-        <div className='bg-black flex overflow-hidden gap-40 py-20'>
+        <div className="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-l from-[#070A0B] via-transparent to-transparent z-10" ></div>
+      <div className="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-r from-[#070A0B] via-transparent to-transparent z-10"></div>
+        <div className='bg-[#070A0B] flex overflow-hidden gap-40 py-20'>
 
 
 

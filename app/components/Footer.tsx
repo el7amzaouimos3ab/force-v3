@@ -6,7 +6,7 @@ import { faSquareFacebook, faSquareInstagram, faSquareXTwitter, faLinkedin, faSq
 
 export const Footer = () => {
   return (
-    <footer className='px-4 lg:px-8'>
+    <footer className='bg-[#070A0B] px-4 lg:px-8'>
 
       <div className="grid grid-cols-1 md:grid-cols-2 py-14">
 

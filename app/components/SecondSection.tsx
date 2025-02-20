@@ -42,7 +42,7 @@ const SecondSection: React.FC = () => {
   }, []);
 
   return (
-    <section id='about' className="relative md:flex md:items-center md:justify-between md:h-full px-4 lg:px-8">
+    <section id='about' className="bg-[#070A0B] relative md:flex md:items-center md:justify-between md:h-full px-4 lg:px-8">
       {/* Right Div (Text) */}
       <div className="md:w-[60%] text-right">
         <h2 className="bottom-to-top-text1 text-[#564897] text-4xl/[1.2] md:text-6xl/[1.2] font-semibold mb-4">

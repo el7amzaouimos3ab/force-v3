@@ -39,10 +39,10 @@ const ContactSection = () => {
 
   return (
     <>
-    <div id='contact' className='px-4 lg:px-8'>
+    <div id='contact' className='px-4 lg:px-8 bg-[#070A0B]'>
         <h1 className='bottom-to-top-text1 text-white text-4xl md:text-5xl font-medium py-10'>تواصل معنا</h1>
     </div>
-    <section className='flex items-center justify-center pb-10 px-4 lg:px-8'>
+    <section className='bg-[#070A0B] flex items-center justify-center pb-10 px-4 lg:px-8'>
        
       <form onSubmit={handleSubmit} className="space-y-4 w-[95%] md:w-[50%] justify-center text-left ">
         {/* Name */}
@@ -95,7 +95,7 @@ const ContactSection = () => {
             name="message"
             value={formData.message}
             onChange={handleInputChange}
-            className="border bg-transparent border-white text-white p-2 w-full"
+            className="bottom-to-top-text1 border bg-transparent border-white text-white p-2 w-full"
             rows={4}
             required
             placeholder='أخبرنا عن مشروعك'
@@ -104,7 +104,7 @@ const ContactSection = () => {
 
         {/* Submit Button */}
         <div>
-          <button className="bg-white px-6 py-2 text-black hover:bg-gray-400 transition-all duration-300" >
+          <button className="bottom-to-top-text1 bg-white px-6 py-2 text-black hover:bg-gray-400 transition-all duration-300" >
           اضغط وابدأ الرحلة   
           </button>
         </div>

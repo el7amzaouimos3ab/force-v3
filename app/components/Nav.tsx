@@ -22,7 +22,7 @@ const Nav: React.FC = () => {
   return (
     <div>
       
-      <nav className="fixed top-0 block w-full max-w-screen py-2 mx-auto bg-black bg-opacity-90 shadow lg:px-8 z-[9999]">
+      <nav className="fixed top-0 block w-full max-w-screen py-2 mx-auto bg-[#070A0B] bg-opacity-90 shadow lg:px-8 z-[9999]">
         <div className="container flex flex-wrap items-center justify-between mx-auto text-white">
           
           <div className="flex items-center gap-x-2">

@@ -175,36 +175,6 @@ const NumbersSection: React.FC = () => {
 
   </section>
 
-
-  <section className="w-full h-full ">
-  <svg
-      width="100%"  // Ensures it takes full width of the container
-      height="100%" // Ensures it takes full height of the container
-      xmlns="http://www.w3.org/2000/svg"
-      
-      preserveAspectRatio="xMidYMid meet"  // Ensures the content is centered
-    >
-      {/* Full background color */}
-      <rect x="0" y="0" width="100%" height="100%" fill="gray" />
-
-      {/* Define the mask */}
-      <mask id="imageMask" x="0" y="0" width="100%" height="100%">
-        {/* You can use an SVG image or simple shape for the mask */}
-        <image id="logo2"  href="/logos/logoo.svg" width="50%" height="50%" x="25%" y="25%" />
-      </mask>
-
-      
-
-      {/* Apply the mask to the PNG image */}
-      <image
-        href="/banner.png"  // The PNG image you want to mask
-        width="100%"  // Full width of the container
-        height="100%"  // Full height of the container
-        mask="url(#imageMask)"  // Apply the mask here
-      />
-    </svg>
-
-  </section>
   </>
   );
 };

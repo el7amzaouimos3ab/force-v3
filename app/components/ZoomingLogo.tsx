@@ -22,9 +22,6 @@ export default function ZoomingLogo() {
           scrub: true, // Sync animation with scroll position
         },
         scale: 20, // Scale animation effect
-        x: "0%", 
-        y: "0%",
-        transformOrigin: "50% 45%"
       });
 
       // ScrollTrigger for .text-zoom
@@ -37,7 +34,7 @@ export default function ZoomingLogo() {
         },
         opacity: 1, // Fade in effect
         filter: "blur(0px)", // Remove blur
-        duration: 0.5, // Smooth transition
+        duration: 0.1, // Smooth transition
       });
 
 
@@ -49,7 +46,7 @@ export default function ZoomingLogo() {
 
   return (
     <>
-      <div className="w-full h-[100vh]">
+      <div className="bg-[#070A0B] w-full h-[100vh]">
         <section className="main relative flex items-center justify-center w-full h-[100vh] overflow-hidden">
           
           <Image
@@ -58,7 +55,7 @@ export default function ZoomingLogo() {
             alt="Image 1"
             width={350}
             height={350}
-            className="logo origin-[50%_42%] relative"
+            className="logo origin-[50%_43%] relative"
           />
 
           <div className="absolute flex justify-center items-center text-center">

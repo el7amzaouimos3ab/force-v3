@@ -16,7 +16,7 @@ import 'swiper/css/scrollbar';
 const ImageSwiper: React.FC = () => {
   return (
     <>
-    <section className='pb-10'>
+    <section className='bg-[#070A0B] pb-10'>
     <div>
         <h1 id='works' className='bottom-to-top-text1 text-white text-4xl md:text-5xl font-medium py-14  px-4 lg:px-8'>أعمالنا</h1>
       </div>
