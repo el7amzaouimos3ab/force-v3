@@ -2,8 +2,9 @@
 import React, { useEffect, useState, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Three from './Three';
+import  Three from './Three';
 import AbouteModale from "./AbouteModale";
+
 
 // Register the ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -44,19 +45,19 @@ const SecondSection: React.FC = () => {
   return (
     <section id='about' className="bg-[#070A0B] relative md:flex md:items-center md:justify-between md:h-full px-4 lg:px-8">
       {/* Right Div (Text) */}
-      <div className="md:w-[60%] text-right">
-        <h2 className="bottom-to-top-text1 text-[#564897] text-4xl/[1.2] md:text-6xl/[1.2] font-semibold mb-4">
+      <div className="flex flex-col gap-6 md:w-[50%] text-right">
+        <h2 className="bottom-to-top-text1 bg-gradient-to-r to-[#564897] from-[#3dc1f0] inline-block text-transparent bg-clip-text text-4xl/[1.2] md:text-6xl/[1.2] font-semibold">
           تعزيز النجاح الرقمي <br />
           باستخدام حلول التسويق <br />
           المخصصة.
         </h2>
 
-        <p className="bottom-to-top-text1 text-xl/8 mb-4">
+        <p className="bottom-to-top-text1 text-xl/8">
           نؤمن بأن كل مشروع ناجح وقوي في السوق وراءه جُنود مخفية مُتحزمة بـالإبداع والاحترافية والتعاون والابتكار، وهذا سبب من أسباب اختيارنا  لاسم القوة الإبداعية لأننا نملك فريق متكامل، مؤهل، وذو خبرة عالية لديه شغف بأنه يوصل لأبعد نقطة بأفكارك  ويحولها إلى واقع ملموس بالحروف، الصوت، الصورة، والأرقام.
         </p>
         <button
           ref={triggerButtonRef}  // Assign ref to the button so we can get its position
-          className="bottom-to-top-text1 bg-white hover:bg-[#564897] hover:text-white px-6 py-2 text-black  transition-all duration-300 mt-4"
+          className=" bottom-to-top-text1 bg-white hover:bg-[#564897] hover:text-white py-2 text-black w-48"
           onClick={openModal}
         >
           اعرف المزيد
@@ -67,7 +68,7 @@ const SecondSection: React.FC = () => {
       </div>
 
       {/* Left Div (Logo) */}
-      <div className="bottom-to-top-text1 md:w-[40%] flex justify-center overflow-hidden">
+      <div className="bottom-to-top-text1 md:w-[50%] flex justify-center overflow-hidden">
         <Three />
       </div>
     </section>

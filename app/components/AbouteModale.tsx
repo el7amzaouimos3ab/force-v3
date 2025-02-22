@@ -43,32 +43,34 @@ interface ModalProps {
 
   return (
     <div
-      className=" aboutSection fixed inset-0 bg-gray-400 bg-opacity-90 flex justify-center items-center z-[999999]"
+      className=" aboutSection fixed inset-0 bg-gray-400 bg-opacity-90 flex justify-center items-center z-[999999] "
       ref={modalRef}
       onClick={onClose} // Close modal on outside click
     >
       <div
-        className="bg-purple-600 shadow-lg h-full w-full relative overflow-hidden"
+        className=" bg-purple-600 shadow-lg h-full w-full relative overflow-hidden px-4 lg:px-8"
         onClick={(e) => e.stopPropagation()} // Prevent closing modal when clicking inside
         style={{ direction: "ltr" }} // Force left-to-right layout to ensure scrollbar appears on the right
       >
         {/* Scrollable content area */}
-        <div className="relative w-full h-full overflow-y-auto p-4 text-white">
+        <div className="flex flex-col gap-8 relative w-full h-full overflow-y-auto justify-center text-white">
           <div className=" flex items-right justify-end border-item">
-                <Image 
-                  src="/logos/footer.webp" // You can also use import to get a local image.
-                    alt="Image 1" 
-                    width={400} 
-                    height={400} 
-                    className="img-top object-cover mb-4"
-                />
-              </div>
-              <p>
-                وُلدت فورس من شغف عميق بمساعدة الشركات على النجاح في عالم رقمي متسارع. عملنا مع علامات تجارية محلية ودولية، لكن تركيزنا ظل ثابتًا دائمًا - تحقيق نتائج حقيقية وقابلة للقياس. بصفتنا وكالة تسويق رقمي متكاملة الخدمات مقرها في المملكة العربية السعودية، نحن ندرك التحديات والفرص الفريدة الموجودة في هذا السوق.              
-              </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 space-y-6 md:space-y-0">
+            <Image 
+              src="/logos/footer.webp" // You can also use import to get a local image.
+              alt="Image 1" 
+              width={400} 
+              height={400} 
+              className="img-top object-cover mb-4"
+            />
+          </div>
+          <div>
+            <p className="text-xl">
+              وُلدت فورس من شغف عميق بمساعدة الشركات على النجاح في عالم رقمي متسارع. عملنا مع علامات تجارية محلية ودولية، لكن تركيزنا ظل ثابتًا دائمًا - تحقيق نتائج حقيقية وقابلة للقياس. بصفتنا وكالة تسويق رقمي متكاملة الخدمات مقرها في المملكة العربية السعودية، نحن ندرك التحديات والفرص الفريدة الموجودة في هذا السوق.              
+            </p>
+          </div>
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-3 space-y-6 md:space-y-0">
                     {/* Grid Item 1 */}
-                    <div className="relative flex flex-col items-center text-center md:p-5 border-item ">
+                    <div className="relative flex flex-col items-center text-center md:p-5 border-item border">
                       
                       <Image 
                         src="/abouts/STRATEGY.gif" // You can also use import to get a local image.
@@ -77,12 +79,12 @@ interface ModalProps {
                         height={100} 
                         className="bottom-to-top-text object-cover mb-4"
                       />
-                      <p className="bottom-to-top-text text-white mb-4">المشهد الرقمي مزدحم. نحن نضمن أن علامتك التجارية لا تكتفي بالبقاء بل تزدهر. تألق مع التسويق الدقيق الذي يجعلك الخيار الأفضل.</p>
+                      <p className="bottom-to-top-text text-white px-5 mb-4">المشهد الرقمي مزدحم. نحن نضمن أن علامتك التجارية لا تكتفي بالبقاء بل تزدهر. تألق مع التسويق الدقيق الذي يجعلك الخيار الأفضل.</p>
                       
                     </div>
             
                     {/* Grid Item 2 */}
-                    <div className="relative flex flex-col items-center text-center md:p-5 border-item">
+                    <div className="relative flex flex-col items-center text-center md:p-5 border-item border">
                       <Image 
                         src="/abouts/MESSAGE.gif" // You can also use import to get a local image.
                         alt="Image 1" 
@@ -90,12 +92,12 @@ interface ModalProps {
                         height={100} 
                         className="bottom-to-top-text object-cover mb-4"
                       />
-                      <p className="bottom-to-top-text text-white mb-4">نساعدك على رسم هوية مميزة في سوقك. حلول جريئة وإبداعية تضمن أن علامتك التجارية تترك انطباعًا لا يُنسى.</p>
+                      <p className="bottom-to-top-text text-white px-5 mb-4">نساعدك على رسم هوية مميزة في سوقك. حلول جريئة وإبداعية تضمن أن علامتك التجارية تترك انطباعًا لا يُنسى.</p>
                       
                     </div>
             
                     {/* Grid Item 3 */}
-                    <div className="relative flex flex-col items-center text-center md:p-5 border-item">
+                    <div className="relative flex flex-col items-center text-center md:p-5 border-item border">
                       <Image 
                         src="/abouts/VISION.gif" // You can also use import to get a local image.
                         alt="Image 1" 
@@ -103,7 +105,7 @@ interface ModalProps {
                         height={100} 
                         className="bottom-to-top-text object-cover mb-4"
                       />
-                      <p className="bottom-to-top-text text-white mb-4">تعاون معنا لاكتشاف التكتيكات والأدوات والمنصات المناسبة التي تدفع عملك إلى الأمام وتضعك على مسار النجاح المستدام.</p>
+                      <p className="bottom-to-top-text text-white px-5 mb-4">تعاون معنا لاكتشاف التكتيكات والأدوات والمنصات المناسبة التي تدفع عملك إلى الأمام وتضعك على مسار النجاح المستدام.</p>
                       
                     </div>
                   </div>

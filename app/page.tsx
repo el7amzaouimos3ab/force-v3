@@ -14,6 +14,7 @@ import ContactSection from "./components/ContactSection";
 import { Footer } from "./components/Footer";
 import ScrollingText from "./components/ScrollingText";
 import Test from "./components/Test";
+import PartnersSection from "./components/PartnersSection";
 
 
 
@@ -39,7 +40,7 @@ export default function Home() {
         <SecondSection />
         
         {/* Partners Section (Showcase of partners or collaborators) */}
-
+        <PartnersSection />
 
         <Test />
         

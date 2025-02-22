@@ -13,8 +13,8 @@ export default function Test() {
       <article>
         
 
-        <section className='grid place-content-center h-screen sticky top-0 overflow-hidden'>
-          <PartnersSection />
+        <section className='grid bg-blue-600 text-black place-content-center h-screen sticky top-0 overflow-hidden'>
+          <h1>fixed section</h1>
         </section>
         <section className=' w-full  grid place-content-center sticky top-0'>
           <ServicesSection />
