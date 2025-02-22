@@ -15,7 +15,7 @@ export default function Test() {
         <section className='grid bg-[#3dc1f0] text-black place-content-center h-screen sticky top-0 overflow-hidden'>
           <h1>fixed section</h1>
         </section>
-        <section className=' w-full  grid place-content-center sticky top-0'>
+        <section className=' w-full  grid place-content-center sticky top-0 rounded-tr-2xl rounded-tl-2xl'>
           <ServicesSection />
         </section>
       </article>

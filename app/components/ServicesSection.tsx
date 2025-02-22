@@ -54,7 +54,7 @@ const texts = gsap.utils.toArray('.bottom-to-top-text') as HTMLElement[];
 }, []);
 
   return (
-    <section id="services" className="bg-[#070A0B] section-two pb-10 px-4 lg:px-8">
+    <section id="services" className="bg-[#070A0B] section-two pb-10 px-4 lg:px-8 rounded-tr-2xl rounded-tl-2xl">
       <div>
         <h1 className='bottom-to-top-text text-white text-4xl md:text-5xl font-medium py-10'>خدماتنا</h1>
       </div>

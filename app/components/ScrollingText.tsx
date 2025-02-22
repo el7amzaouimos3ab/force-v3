@@ -20,16 +20,16 @@ const ScrollingText: React.FC = () => {
 
                 {/* First block of text */}
 
-                <p className='max-w-none text-white font-extrabold text-7xl w-full'>
+                <p className='max-w-none text-[#564897] font-extrabold text-7xl w-full'>
                     سما
                 </p>
 
-                <p className='max-w-none text-white font-extrabold text-7xl w-full'>
+                <p className='max-w-none text-[#564897] font-extrabold text-7xl w-full'>
                     وابداعنا
                 </p>
                 
                 <p className='max-w-none text-white font-extrabold text-7xl w-full'>
-                    ...حدود    
+                    ..حدود    
                 </p>
 
                 <p className='max-w-none text-white font-extrabold text-7xl w-full'>
@@ -44,16 +44,16 @@ const ScrollingText: React.FC = () => {
             <div className=" flex gap-10">
 
                 {/* First block of text */}
-                <p className='max-w-none text-white font-extrabold text-7xl w-full'>
+                <p className='max-w-none text-[#564897] font-extrabold text-7xl w-full'>
                     سما
                 </p>
 
-                <p className='max-w-none text-white font-extrabold text-7xl w-full'>
+                <p className='max-w-none text-[#564897] font-extrabold text-7xl w-full'>
                     وابداعنا
                 </p>
                 
                 <p className='max-w-none text-white font-extrabold text-7xl w-full'>
-                    ...حدود    
+                    ..حدود    
                 </p>
 
                 <p className='max-w-none text-white font-extrabold text-7xl w-full'>
