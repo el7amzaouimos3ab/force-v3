@@ -43,7 +43,7 @@ const SecondSection: React.FC = () => {
   }, []);
 
   return (
-    <section id='about' className="bg-[#070A0B] relative md:flex md:items-center md:justify-between md:h-full px-4 lg:px-8">
+    <section id='about' className="bg-[#070A0B] relative md:flex md:items-center md:justify-between px-4 lg:px-8">
       {/* Right Div (Text) */}
       <div className="flex flex-col gap-6 md:w-[50%] text-right">
         <h2 className="bottom-to-top-text1 bg-gradient-to-r to-[#564897] from-[#3dc1f0] inline-block text-transparent bg-clip-text text-4xl/[1.2] md:text-6xl/[1.2] font-semibold">
@@ -52,7 +52,7 @@ const SecondSection: React.FC = () => {
           المخصصة.
         </h2>
 
-        <p className="bottom-to-top-text1 text-2xl/8">
+        <p className="bottom-to-top-text1 text-xl/8">
           نؤمن بأن كل مشروع ناجح وقوي في السوق وراءه جُنود مخفية مُتحزمة بـالإبداع والاحترافية والتعاون والابتكار، وهذا سبب من أسباب اختيارنا  لاسم القوة الإبداعية لأننا نملك فريق متكامل، مؤهل، وذو خبرة عالية لديه شغف بأنه يوصل لأبعد نقطة بأفكارك  ويحولها إلى واقع ملموس بالحروف، الصوت، الصورة، والأرقام.
         </p>
         <button
