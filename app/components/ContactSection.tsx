@@ -104,7 +104,7 @@ const ContactSection = () => {
 
         {/* Submit Button */}
         <div>
-          <button className="bottom-to-top-text1 bg-white px-6 py-2 text-black hover:bg-gray-400 transition-all duration-300" >
+          <button className="bottom-to-top-text1 bg-white px-6 py-2 text-black hover:bg-gray-400 " >
           اضغط وابدأ الرحلة   
           </button>
         </div>

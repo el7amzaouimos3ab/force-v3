@@ -19,36 +19,23 @@ const ScrollingText: React.FC = () => {
             <div className=" flex gap-10">
 
                 {/* First block of text */}
-                <p className='max-w-none text-[#3DC1F0] font-extrabold text-7xl w-full'>
-                    فورس
+
+                <p className='max-w-none text-white font-extrabold text-7xl w-full'>
+                    سما
+                </p>
+
+                <p className='max-w-none text-white font-extrabold text-7xl w-full'>
+                    وابداعنا
                 </p>
                 
-                <p className='max-w-none text-[#3DC1F0] font-extrabold text-7xl w-full'>
-                    بطاقم 
+                <p className='max-w-none text-white font-extrabold text-7xl w-full'>
+                    ...حدود    
                 </p>
 
-                <p className='max-w-none text-[#3DC1F0] font-extrabold text-7xl w-full'>
-                    التقي
-                </p>
-            </div>
-
-            <div className=" flex gap-10">
-
-                {/* First block of text */}
-                <p className='max-w-none text-[#CC4539] font-extrabold text-7xl w-full'>
-                    الان
-                </p>
-                
-                <p className='max-w-none text-[#CC4539] font-extrabold text-7xl w-full'>
-                    بنا 
-                </p>
-
-                <p className='max-w-none text-[#CC4539] font-extrabold text-7xl w-full'>
-                    التقي
+                <p className='max-w-none text-white font-extrabold text-7xl w-full'>
+                    للعالم  
                 </p>
             </div>
-
-
         </div>
 
 
@@ -57,32 +44,20 @@ const ScrollingText: React.FC = () => {
             <div className=" flex gap-10">
 
                 {/* First block of text */}
-                <p className='max-w-none text-[#3DC1F0] font-extrabold text-7xl w-full'>
-                    فورس
+                <p className='max-w-none text-white font-extrabold text-7xl w-full'>
+                    سما
+                </p>
+
+                <p className='max-w-none text-white font-extrabold text-7xl w-full'>
+                    وابداعنا
                 </p>
                 
-                <p className='max-w-none text-[#3DC1F0] font-extrabold text-7xl w-full'>
-                    بطاقم 
+                <p className='max-w-none text-white font-extrabold text-7xl w-full'>
+                    ...حدود    
                 </p>
 
-                <p className='max-w-none text-[#3DC1F0] font-extrabold text-7xl w-full'>
-                    التقي
-                </p>
-            </div>
-
-            <div className=" flex gap-10">
-
-                {/* First block of text */}
-                <p className='max-w-none text-[#CC4539] font-extrabold text-7xl w-full'>
-                    الان
-                </p>
-                
-                <p className='max-w-none text-[#CC4539] font-extrabold text-7xl w-full'>
-                    بنا 
-                </p>
-
-                <p className='max-w-none text-[#CC4539] font-extrabold text-7xl w-full'>
-                    التقي
+                <p className='max-w-none text-white font-extrabold text-7xl w-full'>
+                    للعالم  
                 </p>
             </div>
 

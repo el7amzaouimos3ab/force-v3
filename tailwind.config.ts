@@ -16,8 +16,8 @@ export default {
 
       keyframes: {
         'scroll-left-to-right': {
-          from: { transform: 'translateX(0)' }, // Start the text off-screen to the right
-          to: { transform: 'translateX(calc(-100% - 160px))' }, // End the text off-screen to the left
+          to: { transform: 'translateX(0)' }, // Start the text off-screen to the right
+          from: { transform: 'translateX(calc(-100% - 160px))' }, // End the text off-screen to the left
         },
       },
       animation: {
