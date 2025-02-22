@@ -101,7 +101,7 @@ const texts = gsap.utils.toArray('.bottom-to-top-text') as HTMLElement[];
         {/* Grid Item 3 */}
         <div className="relative flex flex-col items-right text-right md:p-5 border-item">
           <Image 
-            src="/services/1.png" // You can also use import to get a local image.
+            src="/services/3.png" // You can also use import to get a local image.
             alt="Image 1" 
             width={100} 
             height={100} 

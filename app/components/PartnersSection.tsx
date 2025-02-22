@@ -45,7 +45,7 @@ const PartnersSection: React.FC = () => {
               alt={`Image ${index + 1}`}
               width={615} 
               height={432} 
-              className="w-full h-full object-cover grayscale opacity-50 hover:grayscale-0 hover:opacity-100 hover:scale-110"
+              className="w-full h-full object-cover grayscale opacity-50 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition-transform duration-500 ease-out"
             />
           </div>
         ))}
