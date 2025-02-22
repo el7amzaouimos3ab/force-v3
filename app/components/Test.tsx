@@ -1,7 +1,6 @@
 'use client';
 import React from 'react'
 import { ReactLenis } from 'lenis/react';
-import PartnersSection from './PartnersSection';
 import ServicesSection from './ServicesSection';
 
 export default function Test() {
