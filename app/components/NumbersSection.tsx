@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const NumbersSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement | null>(null); // Reference to the section
-  const centerColor = "#a62d23"; // Color at the center
+  const centerColor = "#f45d4a"; // Color at the center
   const edgeColor = "#C13C27";
 
   useEffect(() => {
