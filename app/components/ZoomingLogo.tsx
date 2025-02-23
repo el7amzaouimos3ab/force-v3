@@ -65,7 +65,7 @@ export default function ZoomingLogo() {
             alt="Image 1"
             layout="fill"
             style={{ objectFit: 'cover' }}
-            className="logo z-40"
+            className="logo z-40 origin-[50%_52%]"
           />
 
           <div className="absolute flex justify-center items-center text-center">
