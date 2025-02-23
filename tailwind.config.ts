@@ -21,7 +21,7 @@ export default {
         },
       },
       animation: {
-        'scroll-left-to-right': 'scroll-left-to-right 8s linear infinite',// Apply the scrolling animation
+        'scroll-left-to-right': 'scroll-left-to-right 12s linear infinite',// Apply the scrolling animation
       },
 
 
