@@ -15,7 +15,7 @@ const MouseBlurEffect: React.FC<MouseBlurEffectProps> = ({
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const ballRef = useRef<HTMLDivElement | null>(null); // To control the ball
 
-  const size = 500; // Size of the blur circle
+  const size = 700; // Size of the blur circle
 
   // Function to smoothly update the position of the blur ball
   const moveBall = useCallback(() => {

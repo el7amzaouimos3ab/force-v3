@@ -1,9 +1,25 @@
+'use client';
 import React from 'react'
+import { useRef } from 'react';
+import MouseBlurEffect from "./MouseBlurEffect";
+
 
 const ScrollingText: React.FC = () => {
+
+    const sectionRef = useRef<HTMLDivElement | null>(null); // Reference to the section
+    const centerColor = "#192429"; // Color at the center
+    const edgeColor = "#070A0B";
+
+
   return (
 
-    <section className='relative'  dir='ltr'> 
+    <section className='relative  overflow-hidden'  dir='ltr' ref={sectionRef}> 
+
+    <MouseBlurEffect 
+        containerRef={sectionRef} 
+        centerColor={centerColor} 
+        edgeColor={edgeColor} 
+      />
 
 
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-l from-[#070A0B] via-transparent to-transparent z-10" ></div>

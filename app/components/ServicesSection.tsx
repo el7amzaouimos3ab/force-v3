@@ -1,15 +1,21 @@
 // app/components/SectionTwo.tsx
 'use client';
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import React from 'react';
 import Image from "next/image";
+import MouseBlurEffect from "./MouseBlurEffect";
+
 
 // Register the ScrollTrigger plugin with GSAP
 gsap.registerPlugin(ScrollTrigger);
 
 const ServicesSection: React.FC = () => {
+
+  const sectionRef = useRef<HTMLDivElement | null>(null); // Reference to the section
+      const centerColor = "#192429"; // Color at the center
+      const edgeColor = "#070A0B";
 
   useEffect(() => {
 
@@ -54,7 +60,15 @@ const texts = gsap.utils.toArray('.bottom-to-top-text') as HTMLElement[];
 }, []);
 
   return (
-    <section id="services" className="bg-[#070A0B] section-two pb-10 px-4 lg:px-8 rounded-tr-3xl rounded-tl-3xl">
+    <section id="services" className="relative bg-[#070A0B] section-two pb-10 px-4 lg:px-8 rounded-tr-3xl rounded-tl-3xl overflow-hidden" ref={sectionRef}>
+
+
+<MouseBlurEffect 
+        containerRef={sectionRef} 
+        centerColor={centerColor} 
+        edgeColor={edgeColor} 
+      />
+
       <div>
         <h1 className='bottom-to-top-text text-white text-4xl md:text-5xl font-medium py-10'>خدماتنا</h1>
       </div>

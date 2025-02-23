@@ -9,6 +9,7 @@ import MouseBlurEffect from "./MouseBlurEffect";
 
 
 
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -28,12 +29,13 @@ const ImageSwiper: React.FC = () => {
     <>
     <section className='relative bg-[#070A0B] pb-10 overflow-hidden' ref={sectionRef}>
 
-
+ 
     <MouseBlurEffect 
         containerRef={sectionRef} 
         centerColor={centerColor} 
         edgeColor={edgeColor} 
       />
+
 
     <div>
         <h1 id='works' className='bottom-to-top-text1 text-white text-4xl md:text-5xl font-medium py-14  px-4 lg:px-8'>أعمالنا</h1>
