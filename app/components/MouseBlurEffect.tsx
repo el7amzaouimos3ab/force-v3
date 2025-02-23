@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 
 interface MouseBlurEffectProps {
   containerRef: React.RefObject<HTMLDivElement | null>;
@@ -18,7 +18,7 @@ const MouseBlurEffect: React.FC<MouseBlurEffectProps> = ({
   const size = 500; // Size of the blur circle
 
   // Function to smoothly update the position of the blur ball
-  const moveBall = () => {
+  const moveBall = useCallback(() => {
     if (ballRef.current) {
       const targetX = position.x - size / 10; // Center the ball at the cursor
       const targetY = position.y - size / 10;
@@ -42,7 +42,7 @@ const MouseBlurEffect: React.FC<MouseBlurEffectProps> = ({
 
       requestAnimationFrame(smoothMove);
     }
-  };
+  }, [position, size]); // Memoize moveBall with position and size as dependencies
 
   // Track mouse position within the container
   useEffect(() => {
@@ -62,10 +62,10 @@ const MouseBlurEffect: React.FC<MouseBlurEffectProps> = ({
     };
   }, [containerRef]);
 
-  // Smoothly update the ball's position
+  // Smoothly update the ball's position when position changes
   useEffect(() => {
-    moveBall();
-  }, [position]);
+    moveBall(); // Call moveBall when position changes
+  }, [moveBall]); // Add moveBall as a dependency
 
   return (
     <div
