@@ -64,8 +64,8 @@ export default function ZoomingLogo() {
             src="/logos/ZOOM.svg" // You can also use import to get a local image.
             alt="Image 1"
             layout="fill"
-            objectFit="cover" 
-            className="logo relative w-full h-full z-40"
+            style={{ objectFit: 'cover' }}
+            className="logo  z-40"
           />
 
           <div className="absolute flex justify-center items-center text-center">

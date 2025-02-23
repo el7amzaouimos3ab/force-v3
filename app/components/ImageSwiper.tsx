@@ -68,8 +68,10 @@ const ImageSwiper: React.FC = () => {
         <Image 
           src="/works/1.PNG" // You can also use import to get a local image.
           alt="work 1" 
-          layout="fill" 
-          objectFit="cover" 
+          width="1080"
+          height="1920"
+          style={{ objectFit: 'cover' }}
+          className="w-full h-auto"
         />
         </div>
       </SwiperSlide>
@@ -79,9 +81,10 @@ const ImageSwiper: React.FC = () => {
         <Image 
           src="/works/2.PNG" // You can also use import to get a local image.
           alt="work 2" 
-          layout="fill" 
-          objectFit="cover" 
-          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+          width="1080"
+          height="1920"
+          style={{ objectFit: 'cover' }}
+          className="w-full h-auto"
         />
         </div>
       </SwiperSlide>
@@ -91,9 +94,10 @@ const ImageSwiper: React.FC = () => {
         <Image 
           src="/works/3.JPEG" // You can also use import to get a local image.
           alt="work 3" 
-          layout="fill" 
-          objectFit="cover" 
-          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+          width="1080"
+          height="1920"
+          style={{ objectFit: 'cover' }}
+          className="w-full h-auto"
         />
         </div>
       </SwiperSlide>
@@ -103,9 +107,10 @@ const ImageSwiper: React.FC = () => {
         <Image 
           src="/works/4.JPEG" // You can also use import to get a local image.
           alt="work 4" 
-          layout="fill" 
-          objectFit="cover" 
-          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+          width="1080"
+          height="1920"
+          style={{ objectFit: 'cover' }}
+          className="w-full h-auto"
         />
         </div>
       </SwiperSlide>
@@ -115,9 +120,10 @@ const ImageSwiper: React.FC = () => {
         <Image 
           src="/works/5.jpeg" // You can also use import to get a local image.
           alt="work 5" 
-          layout="fill" 
-          objectFit="cover" 
-          sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+          width="1080"
+          height="1920"
+          style={{ objectFit: 'cover' }}
+          className="w-full h-auto"
         />
         </div>
       </SwiperSlide>

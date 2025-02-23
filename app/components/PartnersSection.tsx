@@ -1,8 +1,7 @@
 // app/components/ImageSection.tsx
 'use client';
 import React from 'react';
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
+import { useRef } from 'react';
 import Image from "next/image";
 import MouseBlurEffect from "./MouseBlurEffect";
 
@@ -11,27 +10,8 @@ import MouseBlurEffect from "./MouseBlurEffect";
 const PartnersSection: React.FC = () => {
 
     const sectionRef = useRef<HTMLDivElement | null>(null); // Reference to the section
-      const centerColor = "#d4d7d9"; // Color at the center
+      const centerColor = "#564897"; // Color at the center
       const edgeColor = "#f7fafc";
-
-  useEffect(() => {
-    // GSAP animation with ScrollTrigger
-    gsap.fromTo(
-      '.fade-image', // target the image class
-      {
-        opacity: 0, // start with the image invisible
-      },
-      {
-        opacity: 1, // make the image fully visible
-        duration: 1.5, // duration of the fade-in effect
-        scrollTrigger: {
-          trigger: '.fade-image', // the image element itself is the trigger
-          start: 'top 80%', // when the top of the image reaches 80% from the top of the viewport
-          end: 'top 30%', // when the top of the image reaches 30% from the top of the viewport
-        },
-      }
-    );
-  }, []);
 
 
   // Array to generate image paths

@@ -1,7 +1,15 @@
 'use client';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import MouseBlurEffect from "./MouseBlurEffect";
+
 
 const ContactSection = () => {
+
+  const sectionRef = useRef<HTMLDivElement | null>(null); // Reference to the section
+      const centerColor = "#192429"; // Color at the center
+      const edgeColor = "#070A0B";
+
+
   // Manage the state for each form field
   const [formData, setFormData] = useState({
     name: '',
@@ -39,12 +47,21 @@ const ContactSection = () => {
 
   return (
     <>
-    <div id='contact' className='px-4 lg:px-8 bg-[#070A0B]'>
+    
+    <section className='relative bg-[#070A0B]  pb-10 px-4 lg:px-8 overflow-hidden' ref={sectionRef}>
+
+
+    <MouseBlurEffect 
+        containerRef={sectionRef} 
+        centerColor={centerColor} 
+        edgeColor={edgeColor} 
+      />
+
+    <div id='contact' className=' bg-[#070A0B]'>
         <h1 className='bottom-to-top-text1 text-white text-4xl md:text-5xl font-medium py-10'>تواصل معنا</h1>
     </div>
-    <section className='bg-[#070A0B] flex items-center justify-center pb-10 px-4 lg:px-8'>
-       
-      <form onSubmit={handleSubmit} className="space-y-4 w-[95%] md:w-[50%] justify-center text-left ">
+       <div className='flex items-center justify-center'>
+      <form onSubmit={handleSubmit} className=" space-y-4 w-[95%] md:w-[50%] justify-center text-left ">
         {/* Name */}
         <div>
           <input 
@@ -109,6 +126,7 @@ const ContactSection = () => {
           </button>
         </div>
       </form>
+      </div>
     </section>
     </>
   );

@@ -19,18 +19,6 @@ const ServicesSection: React.FC = () => {
 
   useEffect(() => {
 
-  gsap.fromTo('.img-top',{
-    opacity:0,
-},{
-    opacity: 1,
-      scrollTrigger: {
-        trigger: ".img-top",
-        start: "top 90%", // Start counting when the number is near 80% of the viewport height
-        end: "top 20%", // End when the top of the number reaches 30% of the viewport height
-        scrub: 1,}
-});
-
-
 const texts = gsap.utils.toArray('.bottom-to-top-text') as HTMLElement[];
 
 
