@@ -28,7 +28,7 @@ export default function ZoomingLogo() {
       gsap.to(".text-zoom", {
         scrollTrigger: {
           trigger: ".text-zoom",
-          start: `top 60%`, 
+          start: `top 70%`, 
           end: `50% 60%`, // End when the top of .text-zoom reaches 50% of the viewport height
           scrub: true, // Sync animation with scroll position
         },
@@ -61,11 +61,11 @@ export default function ZoomingLogo() {
           
           <Image
             id="logo"
-            src="/logos/ZOOM.svg" // You can also use import to get a local image.
+            src="/logos/zoom2.svg" // You can also use import to get a local image.
             alt="Image 1"
             layout="fill"
             style={{ objectFit: 'cover' }}
-            className="logo  z-40"
+            className="logo z-40"
           />
 
           <div className="absolute flex justify-center items-center text-center">
