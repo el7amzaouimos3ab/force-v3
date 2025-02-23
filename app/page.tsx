@@ -15,9 +15,12 @@ import { Footer } from "./components/Footer";
 import ScrollingText from "./components/ScrollingText";
 import Test from "./components/Test";
 import PartnersSection from "./components/PartnersSection";
+import { title } from "process";
 
 
-
+export const metadata = {
+  title : "Force",
+};
 
 
 

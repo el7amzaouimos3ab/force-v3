@@ -3,6 +3,10 @@
 import React from 'react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import Image from "next/image";
+import { useRef } from "react";
+import MouseBlurEffect from "./MouseBlurEffect";
+
+
 
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,9 +18,23 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 const ImageSwiper: React.FC = () => {
+
+
+  const sectionRef = useRef<HTMLDivElement | null>(null); // Reference to the section
+    const centerColor = "#192429"; // Color at the center
+    const edgeColor = "#070A0B";
+  
   return (
     <>
-    <section className='bg-[#070A0B] pb-10'>
+    <section className='relative bg-[#070A0B] pb-10 overflow-hidden' ref={sectionRef}>
+
+
+    <MouseBlurEffect 
+        containerRef={sectionRef} 
+        centerColor={centerColor} 
+        edgeColor={edgeColor} 
+      />
+
     <div>
         <h1 id='works' className='bottom-to-top-text1 text-white text-4xl md:text-5xl font-medium py-14  px-4 lg:px-8'>أعمالنا</h1>
       </div>

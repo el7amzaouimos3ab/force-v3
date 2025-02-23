@@ -160,7 +160,7 @@ html, body {
   left: 0;
   right: 0;
   height: 2px; /* Height of the top border */
-  background: linear-gradient(to right, #fff, #C13C27); /* Gradient for first item */
+  background: linear-gradient(to right, rgba(225, 225, 225, 1), rgba(225, 225, 225, 0)); 
 }
 
 /* Different gradient for the second grid item */
@@ -171,7 +171,7 @@ html, body {
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(to right, #fff, #fff); /* Gradient for second item */
+  background: linear-gradient(to right, rgba(225, 225, 225, 1), rgba(225, 225, 225, 1));
 }
 
 /* Different gradient for the third grid item */
@@ -182,7 +182,7 @@ html, body {
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(to left, #fff, #C13C27); /* Gradient for third item */
+  background: linear-gradient(to left, rgba(225, 225, 225, 1), rgba(225, 225, 225, 0));
 }
 
 /* Vertical gradient borders between items */
@@ -193,7 +193,7 @@ html, body {
   bottom: 0;
   left: 0;
   width: 2px; /* Width of the vertical border */
-  background: linear-gradient(to bottom, #fff, #C13C27); /* Another gradient for the border */
+  background: linear-gradient(to bottom, rgba(225, 225, 225, 1), rgba(225, 225, 225, 0));
 }
 
 
@@ -220,5 +220,5 @@ html, body {
   bottom: 0;
   left: 0;
   width: 2px; /* Width of the vertical border */
-  background: linear-gradient(to top, #fff, #C13C27); /* Another gradient for the border */
+  background: linear-gradient(to top, rgba(225, 225, 225, 1), rgba(225, 225, 225, 0));
 }
